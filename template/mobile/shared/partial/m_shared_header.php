@@ -113,7 +113,7 @@
 							<li <?php echo (preg_match("/\/information/i", $_SERVER['REQUEST_URI']) > 0)?" class='active'":""; ?>>
 								<a href="<?php echo $home . $links['faq']; ?>">
 									<img class="img-header-logo" id="img-header-logo-about" src="<?php echo $home . "theme/images/mobile/header/about.png"; ?>">
-									<img class="nycuni-navbar-nav-img" src="<?php echo $home."theme/images/header_span_faq.png"; ?>">
+									<img class="nycuni-navbar-nav-img" src="<?php echo $home."theme/images/header_span_search.png"; ?>">
 									<!-- <span class="nycuni-navbar-nav-span">综合</span> -->
 								</a>
 							</li>

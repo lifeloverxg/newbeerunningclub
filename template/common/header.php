@@ -124,7 +124,7 @@
                     </li>
                     <li<?php echo (preg_match("/\/information/i", $_SERVER['REQUEST_URI']) > 0)?" class='active'":""; ?>>
                         <a href="<?php echo $home . $links['faq']; ?>">
-                            <img class="nycuni-navbar-nav-img" src="<?php echo $home."theme/images/header_span_faq.png"; ?>">
+                            <img class="nycuni-navbar-nav-img" src="<?php echo $home."theme/images/header_span_search.png"; ?>">
                             <span class="nycuni-navbar-nav-span">打卡</span>
                         </a>
                     </li>
