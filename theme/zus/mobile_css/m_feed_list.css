@@ -1,0 +1,32 @@
+.feed-list-content
+{
+    padding: 0px;
+}
+
+.button-reply
+{
+	float: right;
+}
+
+.time-feed
+{
+	float: left;
+	display: block;
+	height: 25px;
+	width: 200px;
+	text-align: left;
+	font-size: 0.8rem;
+	color: #CCC;
+}
+
+.comment-time-feed
+{
+	float: left;
+	display: block;
+	height: 25px;
+	width: 200px;
+	text-align: left;
+	font-size: 0.8rem;
+	color: #CCC;
+}
+

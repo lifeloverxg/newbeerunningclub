@@ -1,0 +1,234 @@
+body>section
+{
+	padding-top: 60px;
+}
+
+#ticketInfo
+{
+	text-align: center;
+}
+
+.pay-option-name
+{
+	display: block;
+	float: left;
+	width: 15%;
+}
+
+.panel_footer>input[type='submit']
+{
+	float: right;
+	display: block;
+	width: 30%;
+	/*height: 30px;*/
+	margin-right: 30%;
+	min-width: 150px;
+}
+
+.ticket_row
+{
+	height: 50px;
+}
+
+.ticket_row p
+{
+	font-size: 16px;
+	margin: 0px;
+}
+
+.sale-form-off
+{
+	display: none;
+}
+
+.sale-form-on
+{
+	display: block;
+}
+
+.manage-sale .tab-content
+{
+	border: 0;
+}
+
+.manage-sale .nav-tabs.nav-append-content
+{
+	border-bottom: ;
+}
+
+.manage-sale p
+{
+	margin: 0;
+}
+
+.manage-sale .nav-tabs > li > a:hover, .manage-sale.nav-tabs > li > a:focus
+{
+	color: rgba(0, 116, 168, 0.75);
+}
+
+.manage-sale .btn-primary
+{
+	background-color: rgba(0, 116, 168, 0.6);
+}
+
+.manage-sale .btn-primary
+{
+	background-color: rgba(0, 116, 168, 0.6);
+}
+
+.manage-sale .btn-primary:hover
+{
+	background-color: rgba(0, 116, 168, 1);
+}
+
+.manage-sale .btn-danger
+{
+	width: 200px;
+}
+
+.manage-sale .btn-hg
+{
+	padding: 10px 12px;
+	font-size: 1.2rem;
+	margin-top: 10px;
+}
+
+.manage-sale .ul-button-list-small-large-button > li
+{
+	padding-bottom: 0px;
+	margin-bottom: -2px;
+}
+
+tbody
+{
+	text-align: center;
+}
+
+.tagsinput-add:hover
+{
+  background-color: rgba(0, 116, 168, 0.6);
+}
+
+.sale-form .ticket_table_head
+{
+	background: rgba(244, 244, 244, 1);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border: 1px solid #dedede;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.sale-form .ticket_row
+{
+	border: 1px solid #dedede;
+	height: 60px;
+}
+
+.ticket_table_head img
+{
+	display: block;
+	width: 32px;
+	height: 32px;
+}
+
+.ticket_row img
+{
+	display: block;
+	width: 24px;
+	height: 24px;
+}
+
+.ticket_row img:hover
+{
+	background: rgba(0, 116, 168, 0.3);
+}
+
+.ticket_row input
+{
+	display: block;
+	text-align: center;
+	margin: 0px auto;
+	width: 60%;
+}
+
+.ticket_row .volume-input
+{
+	width: 100%;
+	margin: 0px;
+}
+
+.ticket_row .type-input
+{
+	width: 90%;
+}
+
+.ticket_row .ui-spinner
+{
+	width: 100px;
+	height: 36px;
+}
+
+.ticket_row .ui-spinner-input
+{
+	height: 36px;
+}
+
+.ticket_foot input[type='submit']
+{
+	background: rgba(0, 116, 168, 0.75);
+	color: white;
+	width: 100px;
+	height: 32px;
+	border: 1px solid rgba(0, 116, 168, 0.3);
+	border-radius: 7px;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+
+.ticket_foot input[type='submit']:hover
+{
+	background: rgba(0, 116, 168, 1);
+	color: rgba(244, 244, 244, 1);
+}
+
+.select.select-block
+{
+	width: 30%;
+	min-width: 70px;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+
+.btn-warning:hover, .btn-warning.hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning
+{
+	background-color: rgba(0, 116, 168, 0.75);
+	border-color: #ddd;
+}
+
+.btn-warning
+{
+	background-color: rgba(0, 116, 168, 0.5);
+}
+
+.dropdown-menu li.active > a, .dropdown-menu li.selected > a, .dropdown-menu li.active > a.highlighted, .dropdown-menu li.selected > a.highlighted
+{
+	background: rgba(0, 116, 168, 1);
+}
+
+.dropdown-menu li.active > a:hover, .dropdown-menu li.selected > a:hover, .dropdown-menu li.active > a.highlighted:hover, .dropdown-menu li.selected > a.highlighted:hover, .dropdown-menu li.active > a:focus, .dropdown-menu li.selected > a:focus, .dropdown-menu li.active > a.highlighted:focus, .dropdown-menu li.selected > a.highlighted:focus
+{
+	background: rgba(0, 116, 168, 0.35);
+}
+
+.mbl, .mvl, .mal
+{
+	margin-bottom: 10px !important;
+}
+
+.div-manage-mail
+{
+	display: block;
+	width: 60%;
+	margin: 10px auto;
+}

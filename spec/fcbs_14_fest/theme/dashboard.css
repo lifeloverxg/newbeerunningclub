@@ -1,0 +1,174 @@
+.div-dashboard {
+	width: 470px;
+	padding: 40px 60px 48px 60px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 36px;
+	text-align: center;
+	background: rgba(200, 200, 200, 0.2);
+	border-radius: 25px;
+}
+
+.div-dashboard h1 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: #EEE;
+}
+
+.ul-member-list li {
+	display: block;
+	position: relative;
+	font-size: 1rem;
+}
+
+.ul-member-list .logo-small
+{
+	height:50px;
+	width:50px;
+	margin: 0px;
+	float:left;
+	padding: 2px;
+}
+
+.ul-member-list .logo-small:hover
+{
+	border:1px inset #eee; 
+	background:#87CEEB; 
+	text-decoration:none;
+}
+
+.ul-member-list > a 
+{
+    outline: 0;
+    text-decoration: none;
+    text-align: left;
+    color: #87CEEB;
+}
+
+.ul-member-list a:link 
+{
+    color: #87CEEB;
+}
+
+.ul-member-list a:visited 
+{
+    color: #87CEEB;
+}
+
+.ul-member-list a:hover 
+{
+    color: #FFCC00;
+    text-decoration: underline;
+}
+
+.ul-member-list a:active 
+{
+    color: #33FF66;
+}
+
+
+.member-left
+{
+	padding: 15px 0 15px 0;
+	position: relative;
+	display: inline;
+	float: left;
+	height: 80px;
+}
+
+.member-middle
+{
+	position: relative;
+	display: inline;
+	float: left;
+	width: 220px;
+	height: 80px;
+	margin: 0;
+}
+
+.member-right
+{
+	position: relative;
+	display: inline;
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 0;
+}
+
+
+/*状态人名字*/
+
+.list-title-member
+{
+	height: 24px;
+  	width: 100%;
+  	font-size: 1.2rem;
+  	border: 0px solid #000000;
+  	display: block;
+  	float: left;
+  	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #FFF;
+    text-align: left;
+	padding-left: 8px;
+}
+
+.member-description
+{
+	height: 56px;
+  	width: 100%;
+  	font-size: 0.8rem;
+	line-height: 1rem;
+  	border: 0px solid #000000;
+  	display: block;
+  	float: left;
+  	white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #FFF;
+    text-align: left;
+	padding-left: 10px;
+}
+
+.button_list_small_title
+{
+	background-color: #F68E56;
+	display: block;
+	float: left;
+	height: 30px;
+	margin: 6px 0 4px 0;
+	border-radius: 15px;
+	border: 0px;
+	width: 100%;
+	font-size: 1rem;
+}
+
+.button_list_small_lottery
+{
+	background-color: #F6EEF8;
+	display: block;
+	float: right;
+	height: 30px;
+	margin: 4px 0 6px 0;
+	border-radius: 15px;
+	border: 0px;
+	width: 100%;
+	font-size: 1rem;
+}
+
+.button_list_large
+{
+	font-size: 1.5rem;
+	display: inline-block;
+	margin-top: 10px;
+	width: 260px;
+	border: 0;
+	border-radius: 25px;
+	background: rgb(240, 240, 240);
+}
+
+.button_list_large:hover {
+	background: #7C84ED;
+}

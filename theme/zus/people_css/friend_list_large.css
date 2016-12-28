@@ -1,0 +1,77 @@
+.section-friend-list-large {
+	width: 100%;
+}
+
+.friend-list-large {
+	/*width: 500px;*/
+	margin: 50px auto;
+	background: transparent;
+	color: #FFF;
+}
+
+.friend-list-large .info-title_center
+{
+	color: rgba(118, 118, 166, 1);
+}
+
+.friend-list-table {
+	display: table;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.friend-list-table ul li {
+	margin: 15px 50px;
+}
+
+.friend-left {
+	display: table-cell;
+	width: 80px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.friend-left img
+{
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+
+.friend-middle {
+	display: table-cell;
+	width: 220px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.friend-middle a
+{
+	color: rgba(0, 118, 166, 0.8);
+}
+
+.friend-right {
+	display: table-cell;
+	width: 100px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.friend-right > button {
+	background-color: #da558a;
+    border-radius:14px;
+    border: 0;
+    display:inline-block;
+    color:#FFF;
+    font-family:"Apple LiSung Light";
+    font-size:0.875rem;
+    font-weight: bold;
+    font-style:normal;
+    height:29px;
+    width: 100px;
+    line-height:25px;
+    text-align:center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+}

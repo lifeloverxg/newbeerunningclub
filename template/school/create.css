@@ -1,0 +1,113 @@
+.popup-main
+{
+	width: 700px;
+}
+.create-event-form {
+	width: 500px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.create-event-form input {
+	border: 1px solid #CCC;
+	margin-bottom: 5px;
+	width: 486px;
+	height: 29px;
+}
+
+.create-event-input {
+	height: 35px;
+	width: 500px;
+	padding: 2px 6px;
+	font-size: 1rem;
+}
+
+.create-event-form select {
+	height: 35px;
+	width: 500px;
+	font-size: 1rem;
+	margin-bottom: 5px;
+	border: 1px solid #CCC;
+}
+
+.create-event-form a {
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+.event-location-map
+{
+	height: 420px;
+	width: 60%;
+	border-radius: 0 6px 6px 0;
+	font-size: 1rem;
+	border: 2px inset;
+	margin: 0 auto;
+}
+
+.add-end-time-wrap
+{
+	height: 35px;
+	width: 100%;
+	border-radius: 6px;
+	padding: 2px 6px;
+	font-size: 1rem;
+}
+
+.event-time a
+{
+	color: black;
+}
+
+.event_tag {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.create-event-form textarea {
+	height: 80px;
+	padding: 2px 6px;
+	font-size: 1rem;
+	border: 1px solid #CCC;
+	width: 486px;
+}
+
+#cancel-end-time {
+	display: none;
+}
+
+
+.event-location
+{
+	display: block;
+	width: 100%;
+}
+
+#event_location_street
+{
+	display: inline-block;
+	width: 268px;
+}
+
+#event_location_city
+{
+	display: inline-block;
+	width: 90px;
+}
+
+#event_location_state
+{
+	display: inline-block;
+	width: 90px;
+}
+
+#event_submit {
+	height: 35px;
+	margin: 20px auto;
+	display: block;
+	width: 20%;
+	text-align: center;
+	background-color: #ff8d00;
+	color: white;
+	border: 0;
+}

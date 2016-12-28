@@ -1,0 +1,42 @@
+.spec_add_feed {
+	width: 80%;
+	min-height: 250px;
+	height: auto;
+	margin: 50px auto;
+	padding: 20px;
+	background: rgba(45, 128, 98, 0.5);
+	overflow: hidden;
+}
+
+.spec_add_feed input {
+	display: block;
+	border: 0;
+	border-radius: 5px;
+	width: 60%;
+	margin: 10px auto;
+	height: 35px;
+	padding-left: 10px;
+}
+
+.spec_add_feed label {
+	display: block;
+	width: 60%;
+	margin: 10px auto;
+	height: 30px;
+}
+
+.spec_add_feed input[type="button"]
+{
+	float: right;
+	background: #da558a;
+	width: 90px;
+	color: white;
+	text-align: center;
+}
+
+#chkmsg
+{
+	display: block;
+	text-align: center;
+	color: yellow;
+}

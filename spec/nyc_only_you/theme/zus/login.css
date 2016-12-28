@@ -1,0 +1,85 @@
+body>header {
+	background: rgba(20, 20, 20, 0.2);
+}
+
+body>section {
+	height: 100%;
+	height: -webkit-calc(100% - 50px);
+	height: -moz-calc(100% - 50px);
+	height: calc(100% - 50px);
+}
+
+body>footer {
+	position: absolute;
+	bottom: 0;
+	background: rgba(20, 20, 20, 0.2);
+}
+
+.div-auth {
+	width: 500px;
+	padding: 60px 100px 100px 100px;
+	margin: 1px auto 200px auto;
+	text-align: center;
+	background: rgba(111, 219, 178, 0.8);
+	border-radius: 3%;
+}
+
+.back  {
+	display: none;
+}
+
+.div-auth h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+	color: #EEE;
+}
+
+.div-auth input {
+	font-size: 1.5rem;
+	width: 260px;
+	padding: 2px 8px;
+	display: inline-block;
+	border-top: 0;
+}
+
+.div-auth input[type=submit] {
+	margin-top: 25px;
+	border: 0px;
+}
+
+.div-auth footer>button {
+	font-size: 1.5rem;
+	display: inline-block;
+	margin-top: 10px;
+	width: 260px;
+	border: 0;
+}
+
+.div-signin footer>button{
+	background: #AF94D4;
+}
+
+.div-signin footer>button:hover {
+	background: #b498d9;
+}
+
+.div-signup footer>button {
+	background: rgba(212, 20, 106, 0.8);
+}
+
+.div-signup footer>button:hover {
+	background: #7C84ED;
+}
+
+.ul-error-message {
+	display: inline-block;
+	width: 260px;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.ul-error-message>li {
+	text-align: left;
+	margin: 5px 0;
+	color: #f798ae;
+}

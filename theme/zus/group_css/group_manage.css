@@ -1,0 +1,65 @@
+.section-manage-member {
+	width: 100%;
+}
+
+.manage-member {
+	display: table;
+	width: 500px;
+	margin: 50px auto;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 8px;
+	color: #FFF;
+}
+
+.manage-member ul li {
+	margin: 15px 50px;
+}
+
+.member-left {
+	display: table-cell;
+	width: 80px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.member-middle {
+	display: table-cell;
+	width: 220px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.member-right {
+	display: table-cell;
+	width: 100px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.member-right > button {
+	background-color: #da558a;
+    border-radius:14px;
+    border: 0;
+    display:inline-block;
+    color:#FFF;
+    font-family:"Apple LiSung Light";
+    font-size:0.875rem;
+    font-weight: bold;
+    font-style:normal;
+    height:29px;
+    width: 100px;
+    line-height:25px;
+    text-align:center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+}
+
+.member-type {
+	background: rgba(45, 128, 98, 0.8);
+	font-size: 1rem;
+	padding-left: 10px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px; 
+}

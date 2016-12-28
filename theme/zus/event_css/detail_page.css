@@ -1,0 +1,326 @@
+/*++++++++++活动详细页面-顶部++++++++++*/
+/*.view-top
+{
+	display: block;
+	float: left;
+	width: 100%;
+	font-weight: bold;
+	font-size: 25px;
+	padding: 0px 0px 10px 5px;
+}*/
+/*==========活动详细页面-顶部==========*/
+/*++++++++++活动详细页面-左边++++++++++*/
+.view-left
+{
+	display: block;
+	float: left;
+	width: 750px;
+	margin-right: 30px;
+	min-width: 600px;
+	/*border: 2px solid rgba(2, 2, 2, 0.15);*/
+}
+
+.view-left-top
+{
+	display: block;
+	float: left;
+	padding: 1% 0% 2% 2%;
+	background: white;
+	width: 100%;
+}
+
+.view-left-top-info
+{
+	display: block;
+	float: left;
+	width: 45%;
+	margin-right: 3%;
+	/*border: 1px solid rgba(2, 2, 2, 0.14);*/
+	/*min-height: 295px;*/
+}
+
+.view-left-top-info .ul-info-list li
+{
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #eee;
+}
+
+.view-left-top-info .ul-info-list li:first-child
+{
+	margin-top: 1px;
+}
+
+.view-left-top-info .info-list-label
+{
+	width: 40%;
+	min-width: 75px;
+	max-width: 85px;
+	font-size: 1rem;
+}
+
+.view-left-top-info .info-list-label-spec
+{
+	width: 100%;
+	min-width: 75px;
+	max-width: 85px;
+	font-size: 1rem;
+}
+
+.view-left-top-info .info-list-content
+{
+	width: 50%;
+}
+
+.view-left-top-info .info-list-content-spec
+{
+	width: 55%;
+	word-break: normal;
+}
+
+.event-view-left-top-logo
+{
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+.event-view-left-top-logo .div-logo-large
+{
+	width: 90%;
+	height: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+.event-view-left-top-logo .div-logo-large img
+{
+	max-width: 300px;
+	max-height: 200px;
+}
+
+/*.view-left-button-list
+{
+	display: block;
+	margin-top: 20px;
+}*/
+
+.view-left-button-list .section-button-list-small
+{
+	width: 80%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.view-left-button-list .section-button-list-small .ul-button-list-small-large-button li
+{
+	margin: 2px 15px 2px 0px;
+}
+
+/*+++++左-中+++++*/
+.view-left-mid
+{
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.view-left-mid-detail-info
+{
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.info-list-label-title
+{
+	display: block;
+	width: 100%;
+	height: 30px;
+	background: rgba(2, 2, 2, 0.1);
+}
+
+.info-list-label-title-head
+{
+	display: block;
+	width: 15%;
+	background: rgba(0, 118, 166, 1);
+	color: white;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+}
+
+.info-list-label-title-more
+{
+	display: block;
+	width: 25%;
+	color: black;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	float: right;
+	font-weight: lighter;
+	font-size: 14px;
+}
+
+.glyphicon-toggle-icon
+{
+	width: 10%;
+}
+
+.info-list-label-title-more a
+{
+	color: rgba(2, 2, 2, 0.6);
+	font-weight: lighter;
+}
+
+.view-info-list-content
+{
+	display: block;
+	float: left;
+	padding: 10px 0px 15px 15px;
+	width: 100%;
+	background: white;
+	max-height: 100px;
+	overflow: hidden;
+}
+
+.view-info-list-content-more
+{
+	clear: both;
+	display: block;
+	color: #412683;
+	width: 100%;
+	/*border: 1px solid #ddd;*/
+}
+
+.view-info-list-content-more>a:hover
+{
+	background: rgba(0, 116, 168, 0.1);
+}
+
+.view-info-list-content-more>a
+{
+	display: block;
+    /*width: 100%;*/
+    /*height: 35px;
+    margin-bottom: 25px;*/
+    line-height: 35px;
+    text-align: center;
+    font-size: 0.8rem;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 116, 168, 1);
+}
+
+/*+++photo_list+++*/
+.section-photo-list
+{
+	display: block;
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	background: white;
+}
+
+.photo-list
+{
+	display: block;
+	width: 100%;
+	float: left;
+	padding: 10px;
+}
+
+.section-photo-list .info-list-label-title-head
+{
+	background: rgba(0, 118, 166, 0.8);
+}
+
+
+.photo-list ul li
+{
+	display: inline-block;
+	/*height: 50px;*/
+	width: 15.5%;
+	cursor: pointer;
+}
+
+.photo-list ul li img
+{
+	width: 100%;
+}
+/*===photo_list===*/
+/*=====左-中=====*/
+
+/*+++++左-下+++++*/
+.view-left-bottom
+{
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.info-list-label-title
+{
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: #f7f8f8;
+}
+
+.info-list-label-title-head
+{
+    display: block;
+    width: 15%;
+    background: rgba(0, 118, 166, 1);
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+}
+
+.view-left-bottom .info-list-label-title-head
+{
+	background: rgba(0, 118, 166, 0.6);
+}
+
+
+/*=====左-下=====*/
+
+/*==========活动详细页面-左边==========*/
+
+/*++++++++++活动详细页面-右边++++++++++*/
+.view-right
+{
+	display: block;
+	float: left;
+	/*width: 30%;*/
+	width: 300px;
+}
+
+/*+++++map+++++*/
+.section-map-view
+{
+	display: block;
+	width: 300px;
+	height: 150px;
+	margin-bottom: 35px;
+}
+
+.map-direction
+{
+	display: block;
+	width: 100%;
+	background: rgba(2, 2, 2, 0.2);
+}
+
+.map-direction-font
+{
+	display: block;
+	float: right;
+	background: rgba(2, 2, 2, 0.4);
+	/*padding: 1%;*/
+}
+/*=====map=====*/
+/*==========活动详细页面-右边==========*/

@@ -1,0 +1,239 @@
+/* 全局配置 */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style-type: none;
+    margin: 0;
+}
+
+a, a:hover, a:link, a:visited, a:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+	display: inline-block;
+	margin: 0.1rem auto;
+	border-radius: 0.5rem;
+	/*line-height: 2rem;*/
+	height: 2rem;
+	width: 15rem;
+	padding: 0 0.5rem;
+}
+
+input[type='button'] {
+	margin-top: 2rem;
+	padding: 0;
+	background: rgb(240, 240, 240);
+	font-family:'微软雅黑','幼圆', '宋体', Arial, sans-serif;
+	font-size: 1.2rem;
+}
+
+/*+++++记住密码及忘记密码+++++*/
+.div-account-pass
+{
+	display: inline-block;
+	margin: 0.1rem auto;
+	border-radius: 0.5rem;
+	/*line-height: 2rem;*/
+	height: auto;
+	width: 15rem;
+}
+
+.div-save-pass
+{
+	display: inline-block;
+	border-radius: 0.5rem;
+	/*line-height: 2rem;*/
+	height: auto;
+	width: auto;
+	float: left;
+}
+
+.div-find-pass
+{
+	display: inline-block;
+	height: auto;
+	width: 50%;
+	float: right;
+}
+
+.div-save-pass input[type='checkbox']
+{
+	height: auto;
+	width: auto;
+	margin:0 0.4rem;
+}
+
+.find-pwd:hover {
+	text-decoration: underline;
+}
+/*=====记住密码及忘记密码=====*/
+
+h1 {
+	font-size: 3rem;
+	font-family: "幼圆", "宋体", "Arial", sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+
+em {
+	font-style: normal;
+	color: #f4424a;
+}
+
+html, body {
+	font-size: 100%;
+ 	font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    width: 100%;
+	background: rgba(111, 219, 178, 0.8);
+	position: fixed;
+	top: 0; bottom: 0; left: 0; right: 0;
+}
+
+/* 开头动画 */
+.div-welcome-cover {
+	margin: auto;
+	z-index: -1;
+	cursor: pointer;
+	width: 40%;
+}
+
+.div-welcome-cover figure {
+	width: 58.3333333%;
+	height: 58.3333333%;
+	background-size: contain;
+	float: left;
+}
+/* Animation: 我要颤抖 */
+@-webkit-keyframes logoHover {
+	0% {  }
+	25% { -webkit-transform: rotate(5deg); }
+	50% {  }
+	75% { -webkit-transform: rotate(-5deg); }
+	100% {  }
+}
+@-o-keyframes logoHover {
+	0% {  }
+	25% { -o-transform: rotate(5deg); }
+	50% {  }
+	75% { -o-transform: rotate(-5deg); }
+	100% {  }
+}
+@-moz-keyframes logoHover {
+	0% {  }
+	25% { -moz-transform: rotate(5deg); }
+	50% {  }
+	75% { -moz-transform: rotate(-5deg); }
+	100% {  }
+}
+@keyframes logoHover {
+	0% {  }
+	25% { transform: rotate(5deg); }
+	50% {  }
+	75% { transform: rotate(-5deg); }
+	100% {  }
+}
+.div-welcome-cover figure:not(.uni-nomove):hover {
+	-webkit-animation: logoHover 0.3s;
+	-moz-animation: logoHover 0.3s;
+	-o-animation: logoHover 0.3s;
+	animation: logoHover 0.3s;
+}
+
+.sign-in {
+	font-size: 0;
+}
+
+.img-uni-u {
+	position: relative;
+	top: 0; left: 0;
+	background: url("../images/uni-u.png") no-repeat;
+}
+
+.img-uni-n {
+	position: relative;
+	top: -16.666667%;
+	background: url("../images/uni-n.png") no-repeat;
+}
+
+.img-uni-i {
+	position: relative;
+	top: -75%; left: 41.66666667%;
+	background: url("../images/uni-i.png") no-repeat;
+}
+
+.img-uni-x {
+	position: relative;
+	top: -175%; left: 41.66666667%;
+	background: url("../images/uni-x.png") no-repeat;
+}
+
+.whiteboard {
+	position: fixed;
+	top: 0; left: 0;
+	width: 0; height: 0;
+	background: rgba(255, 255, 255, 0.2);
+	z-index: -2;
+	border: 6px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 主体内容 */
+.section-welcome {
+	display: none;
+	position: fixed;
+}
+
+.section-welcome>h1 span {
+	white-space: nowrap;
+}
+
+.section-welcome>article {
+	top: 4rem;
+	text-align: center;
+	padding-top: 2rem;
+	background-image: url("../images/login-background.png");
+	background-repeat: repeat-x;
+	background-size: contain;
+	background-position: center bottom;
+}
+
+.section-welcome>article>*>h1 {
+	font-size: 2rem;
+}
+
+.section-signup {
+	display: none;
+	position: absolute;
+	border: 3px dashed #fff;
+	background: #47cad5;
+}
+
+.div-signup {
+	display: none;
+	position: absolute;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.img-close {
+	display: none;
+	cursor: pointer;
+	font-size: 0;
+	float: right;
+	background: url("../images/close.png") no-repeat;
+	background-size: contain;
+	width: 50px;
+	height: 50px;
+}
+
+.ul-error-message {
+	color: red;
+}

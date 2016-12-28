@@ -1,0 +1,139 @@
+
+section.section-group-list-large
+{
+  display: block;
+  background-color: #E6E6FA;
+}
+
+
+.ul-group-list-large >li
+{
+ /* background: #FFFFFF; */
+  display: inline-block;
+  height: 390px;
+  width: 280px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #FFFFF0;
+ /* -webkit-border-image:url("http://3.bp.blogspot.com/_lj_y7Z_fw94/S8fI-7-yV4I/AAAAAAAABWs/C1y0qdhz_ZU/s1600/Leaf%2525252BClipart%2525252BBorder.jpg") 25% stretch; 
+  -o-border-image:url("http://3.bp.blogspot.com/_lj_y7Z_fw94/S8fI-7-yV4I/AAAAAAAABWs/C1y0qdhz_ZU/s1600/Leaf%2525252BClipart%2525252BBorder.jpg") 25% stretch; 
+  border-image:url("http://3.bp.blogspot.com/_lj_y7Z_fw94/S8fI-7-yV4I/AAAAAAAABWs/C1y0qdhz_ZU/s1600/Leaf%2525252BClipart%2525252BBorder.jpg") 25% stretch;;
+  */
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.div-group-info
+{
+  display: inline-block;
+  height: 50px;
+  width:250px;
+ /* background: #FFFFFF; */
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.div-group-info > a 
+{
+    font-size: 20px;
+    outline: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#list-title-group
+{
+  height: 50px;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.div-group-info > a:link 
+{
+    color: #000000;
+}
+
+.div-group-info > a:visited 
+{
+    color: #000000;
+}
+
+.div-group-info > a:hover 
+{
+    color: #CCCCCC;
+}
+
+.div-group-info > a:active 
+{
+    color: #33FF66;
+}
+
+.button-group-join
+{
+  height:25px;
+  width:50px;
+}
+
+img.logo-large
+{
+  height:250px;
+  width:250px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+img.logo-small
+{
+  height:50px;
+  width:50px;
+  padding-left:5px;
+}
+
+.ul-member-list-tiny > li
+{
+  display: inline;
+  list-style: none;
+}
+
+.button-group-join {
+  box-shadow:inset 0px 1px 29px 5px #bee2f9;
+  background-color:#E6E6FA;
+  border-radius:5px;
+  text-indent:0;
+  border:1px solid #3866a3;
+  display:inline-block;
+  color:#14396a;
+  font-family:'Apple LiSung Light';
+  font-size:14px;
+  font-weight:bold;
+  font-style:normal;
+  height:25px;
+  line-height:25px;
+  width:75px;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:1px 1px 0px #7cacde;
+  float: right;
+  padding-top: 1px;
+}
+.button-group-join:hover 
+{
+  background-color:#468ccf;
+}
+.button-group-join:active 
+{
+  position:relative;
+  top:5px;
+}
+
+.more-list-large
+{
+  display: block;
+  padding:30px 40px 40px 40px;
+  text-align: center;
+}
+

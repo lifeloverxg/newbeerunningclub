@@ -1,0 +1,354 @@
+.create-event-form
+{
+	width: 85%;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.event-name-tag
+{
+	display: block;
+	float: left;
+	width: 30%;
+}
+
+/*.event_title
+{
+	display: block;
+	float: left;
+	width: 70%;
+}*/
+
+.div-event-create-option
+{
+	display: block;
+	float: left;
+	width: 30%;
+}
+
+.div-event-create-category
+{
+	display: block;
+	width: 25%;
+}
+
+/*TO DO...*/
+.btn-warning
+{
+	/*background-color: rgba(0, 116, 168, 0.5);*/
+	/*color: #fff;*/
+	background-color: #fff;
+	color: #bdc3c7;
+	border: 2px solid #bdc3c7;
+}
+
+.btn-warning:hover, .btn-warning.hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning
+{
+	background-color: rgba(0, 116, 168, 0.5);
+}
+
+.mbl, .mvl, .mal
+{
+	margin-bottom: 10px !important;
+}
+
+.event-time
+{
+	display: block;
+	margin-top: 10px !important;
+}
+
+.create-form .input-group
+{
+	display: block;
+	width: 60%;
+	float: left;
+}
+
+.create-form .input-group-btn
+{
+	display: block;
+	width: 20%;
+	float: left;
+}
+
+.event-time-date
+{
+	display: block;
+	width: 40%;
+	float: left;
+}
+
+.create-form .input-group .form-control
+{
+	width: 80%;
+}
+
+.input-time-hh
+{
+	display: block;
+	width: 20%;
+	float: left;
+}
+
+.event-time .input-group .form-control
+{
+	border-right: none;
+	border-left: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.div-event-create-category .select .btn .filter-option
+{
+	height: inherit;
+	border-right: 2px dotted #bdc3c7;;
+}
+
+.select .caret
+{
+	border-bottom-color: #7f8c9a;
+	border-left-width: 4px;
+	border-right-width: 4px;
+	border-top-color: #7f8c9a;
+	border-top-width: 6px;
+}
+
+.create-form .input-group-btn .btn
+{
+	height: 42px;
+	width: 100%;
+}
+
+.input-time.dropdown-menu li.active > a, .input-time.dropdown-menu li.selected > a, .input-time.dropdown-menu li.active > a.highlighted, .input-time.dropdown-menu li.selected > a.highlighted
+{
+    /*background: #1abc9c;*/
+    width: 100%;
+}
+
+.input-time >.dropdown-menu li.active > a:hover, .dropdown-menu li.selected > a:hover, .dropdown-menu li.active > a.highlighted:hover, .dropdown-menu li.selected > a.highlighted:hover, .dropdown-menu li.active > a:focus, .dropdown-menu li.selected > a:focus, .dropdown-menu li.active > a.highlighted:focus, .dropdown-menu li.selected > a.highlighted:focus
+{
+    background: #1abc9c;
+}
+
+.select.select-block .dropdown-menu
+{
+    margin-top: 10px !important;
+}
+
+.btn-danger
+{
+	background-color: #fff;
+	border: 2px solid #bdc3c7;
+	border-left: 1px dotted #bdc3c7;
+	color: #34495e;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.467;
+	padding: 8px 12px;
+	height: 42px;
+	-webkit-appearance: none;
+	border-radius: 6px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+	transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+.btn-danger:hover, .btn-danger.hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger
+{
+    background-color: #1abc9c;
+    border-color: #ddd;
+}
+
+.input-time-hh .btn-danger
+{
+	border-right: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.input-time-hh .select.select-block
+{
+	margin: 0px;
+}
+
+.input-time-mm
+{
+	display: block;
+	width: 20%;
+	float: left;
+}
+
+.input-time-mm .select.select-block
+{
+	margin: 0px;
+}
+
+.event-location
+{
+	display: block;
+	width: 100%;
+	padding: 5px;
+	border-top: 1px dashed rgba(0, 116, 168, 0.20);
+	border-bottom: 1px dashed rgba(0, 116, 168, 0.20);
+	/*background: rgba(0, 116, 168, 0.1);*/
+	float: left;
+}
+
+.event-location input
+{
+	margin-top: 5px;
+}
+
+.event-location p
+{
+	margin: 0px;
+	color: rgba(150, 150, 150, 1);
+}
+
+#event_location_street
+{
+	display: inline-block;
+	width: 100%;
+}
+
+#event_location_city
+{
+	display: inline-block;
+	width: 35%;
+	float: left;
+}
+
+#event_location_state
+{
+	display: inline-block;
+	width: 20%;
+	float: left;
+}
+
+.event_location_state
+{
+	display: inline-block;
+	width: 35%;
+	float: left;
+}
+
+.event_location_state .select.select-block
+{
+	margin: 5px;
+}
+
+.event_location_state .btn-warning
+{
+	color: #aaa;
+	border: 2px solid #bdc3c7;
+	border-radius: 6px;
+	height: 36px;
+}
+
+.event_location_state .btn-warning:hover, .event_location_state .btn-warning.hover, .event_location_state .btn-warning:focus, .event_location_state .btn-warning:active, .event_location_state .btn-warning.active, .event_location_state .open .dropdown-toggle.btn-warning
+{
+	/*background-color: rgba(0, 116, 168, 0.75);*/
+	background: #1abc9c;
+	color: #fff;
+}
+
+.select .btn .filter-option
+{
+	top: 8px;
+}
+
+.event_tag
+{
+	display: block;
+	width: 100%;
+	padding: 5px;
+	border-top: 1px dashed rgba(0, 116, 168, 0.20);
+	border-bottom: 1px dashed rgba(0, 116, 168, 0.20);
+	/*background: rgba(0, 116, 168, 0.1);*/
+	float: left;
+}
+
+.event-input-margin
+{
+	margin-top: 15px;
+	float: left;
+}
+
+.create-event-form textarea
+{
+	width: 100%;
+	height: 80px;
+	padding: 2px 6px;
+	font-size: 1rem;
+	border: 2px solid #bdc3c7;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.add-event-btn
+{
+	display: block;
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.add-event-btn >a >.tagsinput-add
+{
+	/*display: block;*/
+	text-align: center;
+	font-size: 30px;
+}
+
+.event-size
+{
+	width: 30%;
+	float: left;
+}
+
+/*+++price switch+++*/
+.has-switch span.switch-left
+{
+	background: rgba(0, 116, 168, 0.2);
+}
+
+.has-switch label
+{
+	border: 4px solid rgba(0, 116, 168, 0.3);
+}
+
+.event-price
+{
+	width: 25%;
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.div-event-create-option .select.select-block
+{
+	margin: 15px;
+}
+
+.div-event-create-option .btn-warning
+{
+	height: 36px;
+}
+/*===price switch===*/
+
+
+
+/*+++要放到common里的+++*/
+
+.div-button-list-large
+{
+	float: left;
+}
+/*===要放到common里的===*/

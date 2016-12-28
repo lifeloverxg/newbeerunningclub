@@ -1,0 +1,86 @@
+/*section
+{
+	padding: 10%;
+}*/
+
+body>header
+{
+	position: inherit;
+}
+
+body > section
+{
+	margin-top: 10px;
+	padding: 10px;
+	width: 100%;
+}
+
+.spec-uni_film-up
+{
+	display: block;
+	width: 90%;
+	float: left;
+	/*min-width: 900px;*/
+}
+
+.spec-image-region
+{
+	display: block;
+	width: 50%;
+	min-width: 290px;
+	float: left;
+}
+
+.spec-mv-region
+{
+	display: block;
+	width: 40%;
+	min-width: 290px;
+	margin-top: 10px;
+	float: left;
+}
+
+.spec-uni_film-down-down
+{
+	display: block;
+	width: 100%;
+	float: left;
+	margin-top: 30px;
+}
+
+.spec-board-region
+{
+	display: block;
+	width: 50%;
+	min-width: 290px;
+	float: left;
+	border: 1px solid #bdc3c7;
+	border-radius: 6px;
+}
+
+.spec-board-region > p
+{
+	text-align: center;
+	font-size: 24px;
+	color: rgba(0, 116, 168, 1);
+}
+
+.div-spec-add-feed
+{
+	padding-top: 2%;
+}
+
+.div-spec-add-feed p
+{
+	display: block;
+	width: 100px;
+	float: left;
+}
+
+.spec-about-region
+{
+	display: block;
+	width: 40%;
+	float: left;
+	margin-top: 20px;
+}

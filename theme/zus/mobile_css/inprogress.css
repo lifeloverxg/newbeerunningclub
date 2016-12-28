@@ -1,0 +1,31 @@
+body
+{
+	background: rgba(0, 116, 168, 0.5);
+}
+
+.div-pudding 
+{
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin: auto;
+	/*margin-top: 20px;*/
+	text-align: center;
+	/*background: rgba(0, 116, 168, 1);*/
+	bottom: 0px;
+}
+
+.error-message
+{
+	color: red;
+	font-size: 1.5rem;
+}
+
+.div-pudding img
+{
+	display: block;
+	/*float: left;*/
+	width: 80%;
+	height: 80%;
+	margin: 0px auto;
+}

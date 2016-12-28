@@ -1,0 +1,152 @@
+.articleForm p
+{
+	display: block;
+	float:left;
+	background-color: #FFF;
+	width: 100px;
+	margin: 0px 10px 10px 15px;
+	font-size: 20px;
+	font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+
+.post-article-title
+{
+	display: block;
+	width:400px;
+	height: 35px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin: 0px 0px 10px 20px;
+	padding-left: 10px;
+}
+
+.post-article-category
+{
+	display: block;
+	width:300px;
+	height: 35px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin: 0px 0px 10px 20px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+.post-article-tag
+{
+	display: block;
+	width:400px;
+	height: 35px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin: 0px 0px 10px 20px;
+	padding-left: 10px;
+}
+
+.post-article-privacy
+{
+	display: block;
+	width:300px;
+	height: 35px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin: 0px 0px 10px 20px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+.article-content-wrap {
+	position: relative;
+	height: 300px;
+	width: 80%;
+	float: left;
+}
+
+.post-article-content 
+{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	max-width: 100%;
+	min-height: 300px;
+	max-height: 300px;
+	overflow-y: auto;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	display: block;
+	/*text-indent: 5%;*/
+	padding: 5px;
+}
+
+#post-article-content
+{
+	resize: none;
+	display: none;
+	z-index: 1;	
+}
+
+#post-article-div {
+	-moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    font: medium -moz-fixed;
+    font: -webkit-small-control;
+	z-index: 2;
+	line-height: 30px;
+}
+
+#post-article-div img {
+	display: inline-block;
+	height: 30px;
+}
+
+.article_submit
+{
+	height: 35px;
+	border: 1px solid #CCC;
+	border-radius: 15px;
+	margin-top: 5px;
+	margin: auto;
+	padding-left: 10px;
+	display: block;
+	width: 70%;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+
+.add-expression {
+	position: relative;
+	display: block;
+	float: left;
+	width: 80%;
+	height: 30px;
+}
+
+.add-expression-wrap {
+	position: absolute;
+	top: 0;
+	z-index: 100;
+}
+
+.add-expression ul li{
+	list-style-type: none;
+	display: inline-block;
+	cursor: pointer;
+	margin: 2px;
+	border: 1px solid #FFF;
+	background: rgba(255, 255, 255, 1);
+}
+
+.add-expression ul li:hover {
+	border: 1px solid #CCC;
+}
+
+.show-expression {
+	display: none;
+	border: 1px solid #CCC;
+	width: 90%;
+	background: rgba(255, 255, 255, 1);
+}
+
+.show-expression img {
+	height: 30px;	
+}

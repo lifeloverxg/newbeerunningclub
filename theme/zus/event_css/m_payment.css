@@ -1,0 +1,89 @@
+body>section
+{
+	width: 95%;
+}
+
+.nav-main-topic>span
+{
+	line-height: inherit;
+	zoom: 1;
+	padding: 0 ;
+	overflow: auto;
+}
+
+.nav-logo
+{
+	width: 20%;
+	height: auto;
+}
+
+.header-content
+{
+	min-width: 200px;
+	width: 95%;
+}
+
+.nav-brand span
+{
+	display: none;
+}
+
+.nav-main
+{
+	width: 50%;
+	padding-left: 2%;
+}
+
+.panel-user
+{
+	max-width: 24px;
+	min-width: 24%;
+}
+
+.search-wrap
+{
+	display: none;
+}
+
+.panel_footer>input[type='submit']
+{
+	margin-right: 28%;
+	min-width: 200px;
+}
+
+.footer ul .foot-terms
+{
+	display: none;
+}
+
+.panel-user-main>a>.panel-user-span
+{
+	width: 100%;
+	float: none;
+}
+
+.panel-user-name
+{
+	border-right: none;
+}
+
+.popup-normal
+{
+	width: 90%;
+}
+
+.ticket_type_name
+{
+	width: 50%;
+}
+
+input[type='image']
+{
+	margin-right: 15%;
+}
+
+.footer-copyright
+{
+	text-align: center;
+	float: none;
+}

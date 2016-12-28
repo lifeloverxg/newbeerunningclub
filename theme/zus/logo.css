@@ -1,0 +1,137 @@
+.div-image-upload {
+	width: 470px;
+	padding: 40px 60px 48px 60px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 36px;
+	text-align: center;
+	background: rgba(200, 200, 200, 0.2);
+	border-radius: 25px;
+}
+
+.div-image-upload h1 
+{
+	font-size: 2rem;
+	margin-bottom: 20px;
+	/*color: #EEE;*/
+	color: #3D3C3C;
+}
+
+.div-upload-btn
+{
+	position: relative;
+	font-size: 1.5rem;
+	display: inline-block;
+	margin-top: 10px;
+	width: 260px;
+	border: 0;
+	border-radius: 25px;
+	background: rgb(240, 240, 240);
+}
+
+.div-upload-btn:hover {
+	background: #7C84ED;
+}
+
+.div-upload-btn input {
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	width: 260px;
+	cursor: pointer;
+}
+
+.ctrl-panel {
+	font-size: 1.5rem;
+	display: inline-block;
+	margin-top: 5px;
+	width: 260px;
+	border: 0;
+}
+
+.ctrl-panel tbody {
+	width: 260px;
+}
+
+.ctrl-panel tr {
+	width: 100%;
+}
+
+.ctrl-panel td {
+	width: 20%;
+	height: 50%;
+}
+
+.ctrl-panel button {
+	font-size: 1.5rem;
+	display: inline-block;
+	border: 0;
+	width: 50px;
+	border-radius: 25px;	
+	background: rgb(240, 240, 240);
+	margin: 5px 5px 0 5px;
+}
+
+.ctrl-panel button:hover {
+	background: #7C84ED;
+}
+
+.image_form {
+	font-size: 1.5rem;
+	display: inline-block;
+	margin-top: 10px;
+	width: 260px;
+	border: 0;
+	border-radius: 25px;
+	background: rgb(240, 240, 240);
+}
+
+.image_form:hover {
+	background: #7C84ED;
+}
+
+.image_file::-webkit-file-upload-button {
+	padding: 0;
+	margin: 0;
+	width: 0;
+	border: 0;
+}
+
+.image_file::-ms-browse {
+	padding: 0;
+	margin: 0;
+	width: 0;
+	border: 0;
+}
+
+#image-preview 
+{
+	width: 350px;
+	height: 350px;
+	background: url('') 0px 0px no-repeat #FFF;
+	background-size: 100%;
+	/*background-size: cover;*/
+	cursor: move;
+	border: 2px solid rgba(0, 116, 186, 1);
+}
+
+#change-logo-form {
+	font-size: 0;
+}
+
+.ul-error-message {
+	display: inline-block;
+	width: 260px;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.ul-error-message>li {
+	font-size: 1rem;
+	text-align: left;
+	margin: 5px 0;
+	color: #f798ae;
+}

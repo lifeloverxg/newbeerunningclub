@@ -1,0 +1,413 @@
+/*设置整个feed块*/
+
+.section-feed-list-large
+{
+	height: auto;
+	width:auto;
+	border-radius: 8px;
+}
+
+.feed-list-content {
+	background: white;
+	padding: 10px;
+}
+
+/*状态板块*/
+
+.ul-feed-list-large
+{
+	display: block;
+	margin-top: 10px;
+}
+
+.li-feed-list-large
+{
+	display: block;
+	position: relative;
+	font-size: 10px;
+	margin-right: 5px;
+	border-bottom: 2px;
+	margin-bottom: 10px;
+	border-top: 10px;
+}
+
+.feed-left-area
+{
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+/*状态人头像*/
+.feed-list-content .logo-medium {
+	
+}
+
+.ul-feed-list-large .logo-medium
+{
+	height:100px;
+	width:100px;
+	margin: 0px;
+	float:left;
+	padding: 2px;
+	margin-left: 2px;
+}
+
+.ul-feed-list-large .logo-medium:hover
+{
+	border:1px inset #eee; 
+	background:#87CEEB; 
+	text-decoration:none; 
+}
+
+#ul-feed-list-large-newfeed .logo-medium
+{
+	height:100px;
+	width:100px;
+	margin: 0px;
+	float:left;
+	padding: 2px;
+	margin-left: 2px;
+}
+
+#ul-feed-list-large-newfeed .logo-medium:hover
+{
+	border:1px inset #eee; 
+	background:#87CEEB; 
+	text-decoration:none; 
+}
+
+/*设置状态人名字效果*/
+
+.ul-feed-list-large a 
+{
+    font-size: 1.1rem;
+    outline: 0;
+    text-decoration: none;
+    text-align: left;
+}
+
+.ul-feed-list-large .replyer-title a {
+	font-size: 1rem;
+}
+
+.ul-feed-list-large a:hover 
+{
+    color: #0076a6;
+    text-decoration: underline;
+}
+
+.ul-feed-list-large a:active 
+{
+    color: #33FF66;
+}
+
+/*右边项包含状态及其回复*/
+
+.feed-right-area
+{
+	display: block;
+	float: left;
+	width: 82%;
+	margin-bottom: 20px;
+	padding-left: 10px;
+}
+
+/*状态人名字*/
+
+.div-feed-list-feed .list-title-member
+{
+	height: 30px;
+	width: 100%;
+  	font-size: 20px;
+  	padding-right: 10px;
+  	padding-top: 0px;
+  	border: 0px solid #000000;
+  	display: block;
+  	float: left;
+  	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.div-feed-list-feed a {
+	color: black;
+}
+
+/*设置状态及状态时间块*/
+
+.div-feed-list-feed
+{
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+/*状态文字格式*/
+
+.div-feed-list-feed p
+{
+	display: block;
+	float: left;
+	height: auto;
+	width: 100%;
+	margin-bottom: 5px;
+	font-size: 16px;
+	margin-top:2px;
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+/*状态中如果有图片的格式*/
+
+
+.div-feed-list-feed .image-large
+{
+	display: block;
+	float: left;
+	height: 250px;
+	width: 250px;
+	margin-bottom: 5px;
+	margin-right: 350px;
+}
+
+/*状态发布时间格式*/
+
+.time-feed
+{
+	float: left;
+	display: block;
+	height: 25px;
+	width: 300px;
+	text-align: left;
+	font-size: 0.8rem;
+	color: #CCC;
+}
+
+/*状态list块*/
+
+.ul-feed-list-comment-list
+{
+	clear: both;
+	display: block;
+	width:100%;
+	padding-left: 2px;
+}
+
+.ul-feed-list-comment-list li
+{
+	display: block;
+	width: 100%;
+	list-style: none;
+	font-size: 10px;
+	margin-right: 5px;
+	border: 0px solid #000000;
+	width: 100%;
+	float: left;
+}
+
+.ul-feed-list-comment-list li:hover {
+	background: rgba(255, 255, 255, 0.4);
+}
+
+/*回复人头像*/
+
+.ul-feed-list-comment-list .logo-small
+{
+  height:35px;
+  width:35px;
+  float: left;
+}
+
+/*回复内容块*/
+
+#reply-feed-list
+{
+	display: block;
+	float: left;
+	height: auto;
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+
+/*评论版右侧*/
+
+.comment-right-area
+{
+	display: block;
+	float: left;
+	height: auto;
+	padding-top: 0px;
+	width:72%;
+}
+
+.comment-right-area>p {
+	word-wrap: normal;
+    word-break: break-all;  
+}
+
+/*评论人名字*/
+
+.replyer-title
+{
+	font-size: 0.9rem;
+	height: 25px;
+  	width: 100%;
+  	padding-left: 15px;
+  	padding-right: 10px;
+  	display: block;
+  	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+	margin-bottom: 2px;
+}
+
+/*设置回复内容格式 */
+
+.ul-feed-list-comment-list p
+{
+	display: block;
+	float: left;
+	height: auto;
+	width: 100%;
+	margin-bottom: 5px;
+	font-size: 0.9rem;
+	padding-left: 15px;
+	padding-bottom: 2px;
+	border-bottom: 2px;
+	margin-bottom: 2px;
+	white-space: pre-line;
+	color: black;
+}
+
+.ul-feed-list-comment-list a 
+{
+    text-decoration: none;
+    text-align: left;
+    color: black;
+}
+
+.ul-feed-list-comment-list a:link 
+{
+    color: black;
+}
+
+.ul-feed-list-comment-list a:visited 
+{
+    color: #0076a6;
+}
+
+.ul-feed-list-comment-list a:hover 
+{
+    color: #FFCC00;
+    text-decoration: underline;
+}
+
+.ul-feed-list-comment-list a:active 
+{
+    color: #33FF66;
+}
+
+/* 设置回复发布时间格式 */
+
+.comment-time-feed
+{
+	display: block;
+	height: 25px;
+	width: 300px;
+	text-align: left;
+	margin-left: 15px;
+	float:left;
+	color: #CCC;
+	font-size: 0.6rem;
+	font-family:"微軟雅黑","Microsoft YaHei","宋體",Arial,"微軟正黑體","Microsoft JhengHei";
+}
+
+/*查看更多评论*/
+
+.div-feed-list-more-comment
+{
+	clear: both;
+	text-align: center;
+	display: block;
+	color: #87CEEB;
+}
+
+.div-feed-list-more-comment a
+{
+	clear: both;
+	text-align: center;
+	display: block;
+	color: #87CEEB;
+	font-size: 14px;
+}
+
+/*自己头像*/
+
+.ul-feed-list-reply .logo-small
+{
+  height:35px;
+  width:35px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+/*查看更多状态*/
+
+.more-list-large
+{
+	clear: both;
+	text-align: center;
+}
+
+.self-logo-small
+{
+  height:35px;
+  width:35px;
+  float:left;
+}
+
+
+.comment-textarea { 
+	display: block;
+	margin-left: 5px;
+	overflow: hidden; 
+	width: 93%; 
+	font-size: 0.875rem;
+	height: 36px;
+	line-height: 24px;
+	padding:4px; 
+	float: left;
+}
+
+textarea {
+	border: 1px solid #CCC;
+}
+
+.button-reply
+{
+	background-color: rgba(255, 141, 0, 1);
+	color: #FFF;
+	border: 0;
+	display: block;
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	float: right;
+	margin: 3px;
+	font-size: 0.85rem;
+}
+
+#newfeed-textarea-id {
+	float: left;
+	height: 150px;
+	width: 100%; 
+	margin-left: 0px;
+	padding: 10px;
+	font-size: 1rem;
+}
+
+#newfeed-textarea-id:focus {
+	outline: none;
+}

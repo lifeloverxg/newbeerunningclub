@@ -1,0 +1,149 @@
+@charset "utf-8";
+@import "../bootstrap/buttons.css";
+@import "common.css";
+
+.banner-image {
+	background: url(../images/zus_index_midsize.jpg) no-repeat;
+	background-size: contain; 
+	position: fixed;
+	top: -100px;
+	min-height: 1000px;
+	width: 100%;
+	min-width: 1400px;
+	margin: 0;
+	z-index: 0;
+}
+
+#index-animation {
+	display: none;
+}
+
+.snippets-bg {
+	position: fixed;
+	top: 200px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	background-color: #CCC;
+	opacity: 0.3;
+	filter:alpha(opacity=30);
+}
+
+.snippets {
+	position: fixed;
+	top: 250px;
+	margin: 0;
+	width: 1200px;
+	margin-left: 50px;
+	margin-right: auto;
+	z-index: 100;
+}
+
+.snippet {
+	float: left;
+	position: relative;
+	width: 23%;
+	margin: 10px;
+	min-height: 1px;
+}
+
+.snippet-title {
+	position: absolute;
+	top: 0;
+}
+
+.snippet-title h2 {
+	color: #CCC;
+}
+
+.feature-promo {
+	width: 250px;
+	height: 200px;
+	display: block;
+	position: absolute;
+	top: 50px;
+	outline: none;
+	border: none;
+	text-align: left;
+	padding: 0;
+	font-size: 16px;
+	-moz-box-shadow: 0 0 10px #1e2023;
+	-webkit-box-shadow: 0 0 10px #1e2023;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+
+#home-snippet-event .feature-promo {
+	background: url(../images/event.png) 0 -50px no-repeat;
+}
+
+#home-snippet-event .feature-promo:hover {
+	background: url(../images/event.png) 0 0;
+}
+
+#home-snippet-group .feature-promo {
+	background: url(../images/group.png) 0 -50px no-repeat;
+}
+
+#home-snippet-group .feature-promo:hover {
+	background: url(../images/group.png) 0 0;
+}
+
+#home-snippet-help .feature-promo {
+	background: url(../images/help.png) 0 -50px no-repeat;
+}
+
+#home-snippet-help .feature-promo:hover {
+	background: url(../images/help.png) 0 0;
+}
+
+#home-snippet-info .feature-promo {
+	background: url(../images/info.png) 0 -50px no-repeat;
+}
+
+#home-snippet-info .feature-promo:hover {
+	background: url(../images/info.png) 0 0;
+}
+
+.feature-promo a {
+	cursor: auto;
+}
+
+.feature-promo p {
+	position: absolute;
+	overflow: hidden;
+	left: 5%;
+	top: 20px;
+	height: 0;
+	z-index: 0;
+	color: #CCC;
+	transition:all 0.75s;
+	-webkit-transition:all 0.75s; /* Safari */
+}
+
+.feature-promo:hover p {
+	height: 100px;
+}
+
+.logo {
+	background-image: url(../images/logo.png);
+	position: fixed;
+	overflow: visible;
+	top: 40px;
+	left: 80px;
+	height: 80px;
+	width: 140px;
+	margin: 0;
+	background-size: cover;
+	z-index: 100;
+}
+
+.login {
+	position: fixed;
+	top: 50px;
+	right: 70px;
+	margin: 0;
+	z-index: 100;
+}

@@ -1,0 +1,207 @@
+/*左边模块*/
+
+.ul-button-list-small-small-button > li
+{
+	background: #FFFFFF;
+	display: inline-block;
+	height: 25px;
+	padding-top: 0px;
+	margin: 1px;
+}
+
+.ul-button-list-small-small-button > li > button
+{
+	box-shadow:inset 0px 1px 29px 5px #bee2f9;
+	background-color:#FFFFFF;
+	border-radius:5px;
+	text-indent:0;
+	border:0px solid #FFFFFF;
+	display:inline-block;
+	color:#14396a;
+	font-family:'Apple LiSung Light';
+	font-size:0.6rem;
+	font-weight:bold;
+	font-style:normal;
+	height:35px;
+	line-height:25px;
+	width:35px;
+	text-align:center;
+	text-shadow:1px 1px 0px #7cacde;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list-title-event
+{
+	display: block;
+	float: left;
+	padding-top: 8%;
+	font-size: 1rem;
+	width: 70%;
+	white-space: nowrap;
+  	text-overflow: ellipsis;
+  	overflow: hidden;
+}
+
+.list-title-group
+{
+	display: block;
+	float: left;
+  	width: 70%;
+	padding-top: 8%;
+	font-size: 1rem;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+/*相册集合*/
+.section-image-list
+{
+	position: relative;
+	display: block;
+	background: rgba(255, 255, 255, 0.2);
+	margin-bottom: 30px;
+	border-radius: 8px;
+	height: 160px;
+	width: auto;
+	overflow: hidden;
+}
+
+.section-image-list > p {
+	padding-left: 10px;
+	margin-bottom: 0px;
+    font-size: 1rem;
+    font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif; 
+    color: #FFF;
+    background: rgba(218, 112, 214, 0.2);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.image-list-left-button {
+	float: left;
+}
+
+.image-list-right-button {
+	float: right;
+}
+
+.image-list-left-button, .image-list-right-button {
+	background: rgba(255, 255, 255, 0.1);
+	height: 90%;
+	width: 30px;
+	padding-top: 55px;
+	padding-left: 5px;   
+}
+
+.ul-image-list > li
+{
+  display: inline;
+  list-style: none;
+  margin: 18px 25px;
+  padding: 5px;
+  border: 1px solid #ADFFD0;
+  height: 100px;
+  width: 100px;
+  float: left;
+  text-align: center;
+}
+
+.image-album-cover {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+img.image-medium
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: inline-block;
+  padding: 1px solid #ffffff;
+  height: 100px;
+  width:100px;
+}
+
+img.image-medium:hover
+{
+	border: 1px solid #0000ff;
+	cursor: pointer;
+}
+
+.album-title {
+	position: absolute;
+	z-index: 101;
+	background: rgba(0, 0, 0, 0.2);
+	bottom: -12px;
+	left: 0;
+	height: 25px;
+	width: 100px;
+	color: #FFF;
+	font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+
+.section-people-top {
+	width: 100%;
+	overflow: hidden;
+	height: 380px;
+	background: white;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.section-people-left {
+	float: left;
+	width: 72%;
+	margin-right: 3%;
+}
+
+.section-people-right {
+	float: left;
+	width: 25%;
+}
+
+.section-info {
+	margin-bottom: 10px;
+}
+
+.div-people-info {
+	float: left;
+	width: 30%;
+	padding: 10px 2%;
+}
+
+.div-people-figure {
+	float: left;
+	width: 40%;
+	padding: 10px 0;
+}
+
+.div-people-figure .div-logo-large {
+	display: block;
+	width: 360px;
+	margin: 0 auto;
+}
+
+.div-people-trends {
+	float: left;
+	width: 30%;
+	padding: 10px 2%;
+}
+
+.display-block-small {
+	height: auto;
+}
+
+p.addressing {
+	border-top: 1px solid #0076a6;
+}
+
+.ul-member-list-small {
+	height: 105px;
+	overflow: hidden;
+}

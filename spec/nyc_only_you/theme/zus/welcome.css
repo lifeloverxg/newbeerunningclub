@@ -1,0 +1,321 @@
+html, body {
+	height: 100%;
+}
+
+body>section {
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	height: -webkit-calc(100% - 50px);
+	height: -moz-calc(100% - 50px);
+	height: calc(100% - 50px);
+	top: 0;
+	bottom: 50px;
+}
+
+.div-welcome {
+	padding-top: 60px;
+	background: rgba(111, 219, 178, 0.8);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.div-welcome>header {
+	width: 100%;
+	height: 25%;
+	min-height: 50px;
+	max-height: 350px;
+}
+
+.logo-inc-big {
+	background: url("../images/logo_2.png") no-repeat;
+	background-size: contain;
+	width: 8%;
+	min-width: 50px;
+	height: 40%;
+	min-height: 50px;
+	overflow: visible;
+	float: left;
+	position: relative;
+	top: 30%;
+	left: 10%;
+}
+
+.div-login {
+	float: left;
+	position: relative;
+	top: 30%;
+	left: 70%;
+	left: -webkit-calc(78% - 100px);
+	left: -moz-calc(78% - 100px);
+	left: calc(78% - 100px);
+	width: 200px;
+	height: 30px;
+}
+
+.div-login>a {
+	font-size: 1.8rem;
+	margin-top: 10px;
+	display: inline;
+	width: 80px;
+	border: 0;
+	color: #ddd;
+	font-weight: bold;
+}
+
+.div-login>a:hover[name="signup"] {
+	color: #AF94D4;
+}
+
+.div-login>a:hover[name="signin"] {
+	color: #767DE0;
+}
+
+.div-login>a:hover[name="signout"] {
+	color: #93095A;
+}
+
+.ul-module-list {
+	position: relative;
+	top: 30%;
+	width: 100%;
+	height: 40%;
+	min-height: 272px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 1.5% 10% 1.5% 10%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+@-webkit-keyframes loadingList {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+@-o-keyframes loadingList {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+@-moz-keyframes loadingList {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+@keyframes loadingList {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
+.ul-module-list>li {
+	display: inline-block;
+	float: left;
+	position: relative;
+	top: 0;
+	margin-right: 5%;
+	color: #444;
+	width: auto;
+	height: 96%;
+	-webkit-animation: loadingList 1.5s;
+	-o-animation: loadingList 1.5s;
+	animation: loadingList 1.5s;
+}
+
+.ul-module-list>li:last-child {
+	margin-right: 0;
+}
+
+.ul-module-list>li>a, .ul-module-list>li>a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+
+.ul-module-list>li h1 {
+	font-weight: bold;
+	color: #ddd;
+	height: 20%;
+	font-size: 2rem;
+}
+
+.ul-module-list>li div {
+	height: 70%;
+	width: 150px;
+	background: #FFF;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+#module-event div {
+	background: url("../images/event.png") no-repeat;
+	background-size: cover;
+
+}
+
+#module-group div {
+	background: url("../images/group.png") no-repeat;
+	background-size: cover;
+}
+
+#module-faq div {
+	background: url("../images/faq.png") no-repeat;
+	background-size: cover;
+}
+
+@-webkit-keyframes showDetail {
+	from {
+		top: 100%;	
+	}
+	to {
+		top: 0%;
+	}
+}
+@-o-keyframes showDetail {
+	from {
+		top: 100%;	
+	}
+	to {
+		top: 0%;
+	}
+}
+@-moz-keyframes showDetail {
+	from {
+		top: 100%;	
+	}
+	to {
+		top: 0%;
+	}
+}
+@keyframes showDetail {
+	from {
+		top: 100%;	
+	}
+	to {
+		top: 0%;
+	}
+}
+@-webkit-keyframes hideDetail {
+	from {
+		top: 0%;
+	}
+	to {
+		top: 100%;
+	}
+}
+@-o-keyframes hideDetail {
+	from {
+		top: 0%;	
+	}
+	to {
+		top: 100%;
+	}
+}
+@-moz-keyframes hideDetail {
+	from {
+		top: 0%;
+	}
+	to {
+		top: 100%;
+	}
+}
+@keyframes hideDetail {
+	from {
+		top: 0%;
+	}
+	to {
+		top: 100%;
+	}
+}
+
+.ul-module-list>li div>p {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(200, 200, 200, 0.3);
+	color: #FFF;
+	text-shadow: 2px 2px 2px #000;
+	padding: 8px;
+	-webkit-animation: hideDetail .5s;
+	-o-animation: hideDetail .5s;
+	animation: hideDetail .5s;
+	position: relative;
+	top: 100%;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.ul-module-list>li div:hover>p {
+	-webkit-animation: showDetail .5s;
+	-o-animation: showDetail .5s;
+	animation: showDetail .5s;
+	top: 0%;
+}
+
+/*for large screens*/
+@media screen and (min-width: 1025px) {
+	.ul-module-list>li div {
+		height: 70%;
+		width: 230px;
+		background: #FFF;
+		overflow: hidden;
+		border-radius: 8px;
+	}
+}
+
+/*for medium screens*/
+@media screen and (max-width: 1024px) {
+	.ul-module-list>li div {
+		height: 70%;
+		width: 150px;
+		background: #FFF;
+		overflow: hidden;
+		border-radius: 8px;
+	}
+}
+
+/*for small screens*/
+@media screen and (max-width: 640px) {
+	.ul-module-list {
+		padding: 0;
+		height: 270px;
+	}
+	.ul-module-list>li {
+		display: block;
+		width: 100%;
+		height: 90px;
+		padding: 25px 0 0 65px;
+	}
+
+	#module-event {
+		background: rgba(250, 100, 100, 0.7);
+	}
+
+	#module-group {
+		background: rgba(100, 80, 250, 0.7);
+	}
+
+	#module-faq {
+		background: rgba(100, 220, 200, 0.7);
+	}
+	.ul-module-list>li h1 {
+		margin: 0;
+		height: 100%;
+	}
+	.ul-module-list>li div {
+		display: none;
+	}
+}

@@ -1,0 +1,282 @@
+.body
+{
+    font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+.left-half
+{
+    width: 68.4%;
+    min-width: 600px;
+    float: left;
+}
+a
+{
+    text-decoration: none;
+
+}
+.school-intro
+{
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 0 3px rgb(192,192,192);
+}
+.school-logo
+{
+    margin: 10px 0 0 25px;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.school-logo>img
+{
+    
+    width: 98%;
+}
+.school-logo>button
+{
+    width: 40%;
+    background-color: rgb(255,141,0);
+    color: white;
+    border: 1px solid rgb(255,141,0);
+    border-radius: 3px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 4px 0 4px 0;
+}
+.school-intro>p
+{
+    width: 65%;
+    float: left;
+    text-align: justify;
+}
+.school-event,.school-article
+{
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 0 3px rgb(192,192,192);
+    border: 2px solid #4c94b5;
+    border-width: 2px 0 0 0;
+}
+.event-title
+{
+    background-color: rgb(238,238,238);
+    height: 30px;
+}
+.event-title>p
+{
+    background-color: #4c94b5;
+    height: 30px;
+    width: 80px;
+}
+p#title
+{
+    color: white;
+    font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+.school-event-list
+{
+    text-align: center;
+}
+.event-description
+{
+     width: 19%;
+     display: inline-block;
+     margin: 10px 10px 0 10px;
+     box-shadow: 0 2px 3px rgb(192,192,192);
+}
+.event-description>img
+{
+    width: 100%;
+    box-shadow: 0 2px 2px rgb(192,192,192);
+}
+.event-place
+{
+    background-color: rgb(247,248,248);
+    margin: 0;
+    padding: 0;
+    
+}
+.event-place>p
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+    line-height: 19px;
+    word-wrap: break-word;  
+    word-break: normal;
+}
+.school-comment
+{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 3px rgb(192,192,192);
+}
+.comment-title
+{
+    background-color: rgb(238,238,238);
+    height: 30px;
+}
+.comment-title>p
+{
+    height: 30px;
+    width: 110px;
+    border: 2px solid #4c94b5;
+    border-width: 2px 0 0 0;
+}
+.comment-class
+{
+    height: 40px;
+    border: 1px solid rgb(238,238,238);
+    border-width: 0 0 1px 0;
+}
+.comment-class>span
+{
+    margin: 0 10px 0 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+.comment-class>button
+{
+    color: white;
+    float: right;
+    height: 32px;
+    width: 90px;
+    background-color: rgb(255,141,0);
+    border-radius: 5px;
+    padding: 0;
+    margin: 4px 10px 0 0;
+    border: 1px solid rgb(255,141,0);
+}
+.right-half
+{
+    width: 26.9%;
+    min-width: 240px;
+    float: right;
+}
+.share-frame
+{
+    background-image: url('../../theme/images/background1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 3px rgb(192,192,192);
+}
+.school-admin
+{
+    background-color: white;
+    box-shadow: 0 2px 3px rgb(192,192,192);
+    margin-bottom: 40px;
+}
+.school-member
+{
+    background-color: white;
+    box-shadow: 0 2px 3px rgb(192,192,192);
+}
+.share-header
+{
+    background-image: url('../../theme/images/background2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 3px rgb(192,192,192);
+    z-index: 10;
+}
+p.right-title
+{
+    color: black;
+    font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+    overflow: auto;
+    height: 100%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.share-wechat
+{
+    height: 65%;
+    margin-top: 10px;
+    margin-left: 11%;
+}
+.share-wechat>img
+{
+    width: 35%;
+    display: inline-block;
+    border: 1px solid rgb(192,192,192);
+    float: left;
+}
+.NYCuni-com
+{
+    height: 100%;
+    margin-left: 8%;
+    float: left;
+    display: inline-block;
+}
+.NYCuni-com>p
+{
+    margin: 0;
+    padding: 0;
+}
+p#uni
+{
+    color: #0076a6;
+    font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-size: 17px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.share-media
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.jiathis-border
+{
+    display: inline-block;
+    width: 30px;
+    margin: 0 4px 0 4px;
+}
+.school-admin-list,.school-member-list
+{
+    text-align: center;
+    margin-top: 10px;
+}
+.school-admin-member
+{
+    width: 23%;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.school-admin-member>a
+{
+    text-decoration: none;
+}
+.school-admin-member>a>img
+{
+    width: 100%;
+    border: 1px solid rgb(238,238,238);
+    border-radius: 4px;
+}
+.school-article-list
+{
+    box-sizing:border-box;
+    height: 30px;
+    padding: 10px 40px 0 40px;
+    line-height: 20px;
+    width: 100%;
+}

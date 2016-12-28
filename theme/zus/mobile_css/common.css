@@ -1,0 +1,717 @@
+/*
+ This file has been moved to
+ ~/theme/mobile/elite/m_elite_theme.css
+ */
+
+ /*++++++++++popup login_panel++++++++++*/
+.div-popup-login_panel 
+{
+    left: -10000px;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: none;
+    width: 100%;
+    height: 100%;
+    z-index: 150;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: scroll;
+}
+
+.popup-login_panel-close 
+{
+    display: block;
+    float: right;
+    font-size: 2rem;
+    padding: 6px 12px;
+    border-radius: 0 0 0 100%;
+    background: rgba(250, 250, 250, 0.3);
+}
+
+.popup-login_panel-close:hover 
+{
+    background: rgba(250, 250, 250, 0.5);
+}
+
+.popup-login_panel-close>span 
+{
+    color: #aaa;
+}
+
+.popup-login_panel
+{
+    width: 80%;
+    background: #fff;
+    border: 3px solid #0076a6;
+    padding: 10px;
+    margin: 100px auto;
+    height: auto;
+}
+
+.popup-login_panel>header 
+{
+    border-bottom: 1px solid #222;
+    margin-bottom: 10px;
+}
+
+.popup-login_panel>header>h1
+{
+    margin-bottom: 4px;
+    font-size: 2rem;
+    background: #fdc286;
+}
+
+.back
+{
+    display: none;
+}
+
+.article-login_panel
+{
+    text-align: center;
+}
+
+.article-login_panel input
+{
+    width: 85%;
+    height: 35px;
+    margin: 2px auto;
+    border: 2px solid rgba(0, 118, 166, 1);
+    border-radius: 5px;
+}
+
+.head-login_panel
+{
+    display: block;
+    margin: 0px 0px 10px 1px;
+    float: left;
+}
+
+.login-logo
+{
+    display: block;
+    float: left;
+}
+
+.login-announce
+{
+    display: block;
+    float: left;
+    margin: 15px 0px 0px 10px;
+    color: rgba(0, 118, 166, 1);
+}
+
+.article-login_panel .ul-error-message
+{
+    color: rgba(0, 118, 166, 1);
+}
+
+/*+++++记住密码及忘记密码+++++*/
+.article-login_panel .div-account-pass
+{
+    display: inline-block;
+    margin: 0.1rem auto;
+    border-radius: 0.5rem;
+    /*line-height: 2rem;*/
+    height: auto;
+    width: 15rem;
+}
+
+.article-login_panel .div-save-pass
+{
+    display: inline-block;
+    border-radius: 0.5rem;
+    /*line-height: 2rem;*/
+    height: auto;
+    width: auto;
+    float: left;
+}
+
+.article-login_panel .div-find-pass
+{
+    display: inline-block;
+    height: auto;
+    width: 50%;
+    float: right;
+}
+
+.article-login_panel .div-save-pass input[type='checkbox']
+{
+    height: auto;
+    width: auto;
+    margin:0 0.4rem;
+}
+
+.article-login_panel .find-pwd:hover 
+{
+    text-decoration: underline;
+}
+/*=====记住密码及忘记密码=====*/
+
+#signin_button
+{
+    width: 35%;
+    height: 35px;
+    margin: 2px auto;
+    border: 0px;
+    background: transparent;
+    color: rgba(230, 38, 138, 1);
+    outline: none;
+}
+
+#signup_button
+{
+    width: 30%;
+    height: 35px;
+    margin: 2px auto;
+    border: 0px;
+    border-radius: 5px;
+    background: transparent;
+    color: rgba(230, 38, 138, 1);
+    outline: none;
+}
+
+.article-login_panel button
+{
+    width: 30%;
+    height: 35px;
+    margin: 2px auto;
+    border: 0px;
+    background: transparent;
+    color: rgba(0, 118, 166, 1);
+}
+/*==========popup login_panel==========*/
+
+/*++++++++++logo_css++++++++++*/
+.div-image-upload
+{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    /*margin-top: 20px;*/
+    text-align: center;
+    /*background: rgba(0, 116, 168, 1);*/
+    bottom: 0px;
+}
+
+.div-image-upload h1
+{
+    font-size: 1.2rem;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: rgba(0, 116, 168, 1);
+}
+
+.div-upload-btn
+{
+    position: relative;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 10px;
+    width: 180px;
+    /*height: 2.5rem;*/
+    border: 0;
+    height: 1.8rem;
+    border-radius: 25px;
+    background: rgb(240, 240, 240);
+}
+
+.div-upload-btn:hover
+{
+    background: #7C84ED;
+}
+
+.div-upload-btn input
+{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+.ctrl-panel
+{
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-top: 5px;
+    width: 180px;
+    border: 0;
+}
+
+.ctrl-panel tbody
+{
+    width: 260px;
+}
+
+.ctrl-panel tr
+{
+    width: 100%;
+}
+
+.ctrl-panel td
+{
+    width: 20%;
+    height: 50%;
+}
+
+.ctrl-panel button
+{
+    font-size: 1.2rem;
+    display: block;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;    
+    background: rgb(240, 240, 240);
+    margin: 5px 5px 0 5px;
+    text-align: center;
+}
+
+button[name='move_left']
+{
+    margin: 5px 5px 0 0px;
+}
+
+button[name='zoom_in']
+{
+    width: 35px;
+    height: 35px;
+}
+
+button[name='zoom_out']
+{
+    width: 35px;
+    height: 35px;
+}
+
+.ctrl-panel button img
+{
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.ctrl-panel button:hover
+{
+    background: #7C84ED;
+}
+
+.image_form
+{
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 10px;
+    width: 180px;
+    height: 1.8rem;
+    border: 0;
+    border-radius: 25px;
+    background: rgb(240, 240, 240);
+}
+
+.image_form:hover
+{
+    background: #7C84ED;
+}
+
+.image_file::-webkit-file-upload-button
+{
+    padding: 0;
+    margin: 0;
+    width: 0;
+    border: 0;
+}
+
+.image_file::-ms-browse
+{
+    padding: 0;
+    margin: 0;
+    width: 0;
+    border: 0;
+}
+
+#image-preview
+{
+   /* display: block;
+    text-align: center;
+    margin: 0.1px auto;
+    width: 250px;
+    height: 250px;
+    background: url('') 0px 0px no-repeat #FFF;
+    background-size: cover;
+    background-position: center center;
+    cursor: move;*/
+    width: 180px;
+    height: 180px;
+    margin: 0.1px auto;
+    background: url('') 0px 0px no-repeat #FFF;
+    background-size: 100%;
+    /*background-size: cover;*/
+    cursor: move;
+    border: 2px solid rgba(0, 116, 186, 1);
+}
+
+#change-logo-form
+{
+    font-size: 0;
+}
+
+.ul-error-message
+{
+    display: inline-block;
+    width: 260px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.ul-error-message>li
+{
+    font-size: 1rem;
+    text-align: left;
+    margin: 5px 0;
+    color: #f798ae;
+}
+
+/*=========logo_css==========*/
+
+.nav-header
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin : 0 auto ;
+    height: 43px;
+    display: block;
+    z-index: 10;
+}
+
+.nycuni-header
+{
+    background-color: rgba(0, 118, 166, 1);
+}
+
+.nycuni-header .navbar-default
+{
+    background-color: rgba(0, 116, 168, 0);
+}
+
+.nycuni-header .navbar
+{
+    height: 43px;
+    min-height: 43px;
+    max-width: 1100px;
+    margin: 0px auto;
+    border: none;
+}
+
+.navbar-toggle
+{
+    margin: 0px;
+    margin-left: 2px;
+    padding: 0px 10px;
+    float: right;
+}
+
+.navbar-default .navbar-toggle:before
+{
+    color: #fff;
+}
+
+.nycuni-header .navbar-toggle
+{
+    height: 41px;
+    line-height: 41px;
+    border: none;
+}
+
+.nycuni-header .navbar-brand
+{
+    padding: 4px 2px 4px 5px;
+}
+
+.nycuni-header .nav-brand-span
+{
+    display: block;
+    margin-right: 8px;
+    padding-left: 0px; 
+}
+
+.nycuni-header .navbar-brand img
+{
+    display: block;
+    /*width: 35px;*/
+    height: 35px;
+}
+
+.nycuni-header .nav-brand-span img
+{
+    display: block;
+    /*width: 35px;*/
+    height: 15px;
+    margin-top: 3px;
+}
+
+.nycuni-header .nav-brand-span span
+{
+    display: block;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #fff;
+    margin: 0px 0px -2px 10px;
+    text-transform : lowercase;
+}
+
+.nycuni-header .header-collapse
+{
+   /* min-height: 900px;
+    min-height: -webkit-calc(100% - 50px);
+    min-height: -moz-calc(100% - 50px);
+    min-height: calc(100% - 50px);
+    min-height: 800px;
+    width: 70%;
+    max-height: 800px;*/
+    /*background: rgba(0, 116, 168, 1);*/
+}
+
+.nycuni-header .navbar-collapse
+{
+    background: rgba(0, 116, 168, 1);
+    border: none;
+    min-height: 900px;
+    min-height: -webkit-calc(100% - 50px);
+    min-height: -moz-calc(100% - 50px);
+    min-height: calc(100% - 50px);
+    max-height: 500px;
+    width: 40%;
+    float: right;
+}
+
+#navbarInput-01
+{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.nycuni-navbar-nav> li > a > img
+{
+    height: 18px;
+    /*margin: 0px auto;*/
+}
+
+.nycuni-header .navbar-nav
+{
+    margin: 0px -15px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+   background: rgba(19, 72, 110, 0.6);
+}
+.navbar-default .navbar-nav > .active > a
+{
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a
+{
+    color: white;
+}
+
+.nycuni-header .navbar-nav > li > a
+{
+    /*padding: 10px 15px;*/
+    /*text-align: center;*/
+    padding: 10px 31px;
+}
+
+.navbar-right-setting img
+{
+    width: 29px;
+    height: 29px;
+    float: left;
+}
+
+#navbar-collapse-01>a>img
+{
+    display: block;
+    width: 40px;
+    height: 40px;
+    /*margin: 0px auto;*/
+    /*float: left;*/
+}
+
+.dropdown-nycuni-show-user
+{
+    display: block;
+    float: left;
+    /*width: 100px;*/
+    height: 30px;
+    width: 50px;
+    line-height: 30px;
+    word-wrap: nowrap;
+    text-align:left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.nycuni-header .navbar-default .navbar-form .input-group.focus .form-control,
+.nycuni-header .navbar-default .navbar-form .input-group.focus .input-group-btn .btn
+{
+    border: 2px solid #1abc9c;
+}
+
+.nycuni-header .navbar-default .navbar-toggle:hover, .nycuni-header .navbar-default .navbar-toggle:focus
+{
+    background: inherit;
+}
+
+.nycuni-header .navbar-default .navbar-toggle:hover:before, .nycuni-header .navbar-default .navbar-toggle:focus:before
+{
+    color: #fff;
+}
+
+.nycuni-header .navbar-default .navbar-form .input-group.focus .form-control,
+{
+    border-right: none;
+}
+
+.nycuni-header .navbar-default .navbar-form .input-group.focus .input-group-btn .btn
+{
+    border-left: none;
+}
+
+.nycuni-header .navbar-default .navbar-nav > .dropdown > a .caret
+{
+    margin-top: 5px;
+    margin-left: 3px;
+    border-top-color: #fff;
+}
+
+.nycuni-header .navbar-right-setting > li > a
+{
+    padding: 7px 21px;
+}
+
+.nycuni-header .open > .dropdown-menu
+{
+    margin-top: 0px!important;
+    background-color: rgb(0,118,166);
+    border-radius: 0px!important;
+}
+
+.nycuni-header .navbar-nav > li > .dropdown-menu
+{
+    min-width: 100%;
+}
+
+.nycuni-header .dropdown-menu li > a
+{
+    color: #fff;
+}
+
+.nycuni-header .navbar-right-setting>li>a>span
+{
+    font-size: 12px;
+}
+
+.nycuni-header .dropdown-menu li:first-child > a
+{
+    border-radius: 0px;
+}
+
+.nycuni-header .navbar-right-setting .dropdown li
+{
+    text-align: center;
+}
+
+@media (min-width: 768px)
+{
+    .nycuni-header .navbar-collapse
+    {
+        background: rgba(0, 116, 168, 1);
+        /*max-height: 43px;*/
+        min-width: 1100px;
+    }
+
+    .navbar-right
+    {
+        float: left!important;
+        margin-left: 50px;
+    }
+
+    .nycuni-header .navbar-header
+    {
+        min-width: 216px;
+    }
+
+    .nycuni-navbar-nav-img
+    {
+        display: none;
+    }
+
+    .nycuni-navbar-nav-span
+    {
+        display: block;
+    }
+
+    .nycuni-header .nycuni-navbar-form
+    {
+        padding: 8px 19px;
+        width: 200px;
+    }
+
+    .nycuni-header .navbar-collapse .navbar-nav.navbar-right:last-child > .dropdown:last-child > a
+    {
+        border-radius: 0px;
+    }
+
+    .nycuni-header .navbar-right-setting
+    {
+        float: right!important;
+        width: 20%;
+        min-width: 205px;
+    }
+}
+
+@media (max-width: 767px)
+{
+    .nycuni-header .navbar-header
+    {
+        border: none;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a
+    {
+        color: #fff;
+        float: left;
+    }
+
+    .nycuni-header .nycuni-navbar-form
+    {
+        /*width: 80%;*/
+        min-width: 130px;
+       /* float: left;*/
+    }
+
+    .nycuni-navbar-nav-img
+    {
+        display: block;
+    }
+
+    .nycuni-navbar-nav-span
+    {
+        display: none;
+    }
+}
+

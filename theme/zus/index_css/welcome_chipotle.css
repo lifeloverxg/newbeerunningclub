@@ -1,0 +1,328 @@
+html, body 
+{
+	font-size: 100%;
+ 	font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    width: 100%;
+	/*background-image: url("../../images/login_welcome.png");*/
+    background: rgba(0, 116, 168, 0.1);
+	background-size: cover;
+	color: white;
+	position: fixed;
+	top: 0; bottom: 0; left: 0; right: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style-type: none;
+    margin: 0;
+}
+
+a, a:hover, a:link, a:visited, a:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*-- Footer --*/
+body>footer {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    clear: both;
+}
+
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #BDA6BA;
+    line-height: 50px;
+    display: block;
+}
+
+.footer-content>ul>li {
+    list-style-type: none;
+    display: inline;
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+.footer-copyright {
+    float: left;
+    color: #999;
+}
+
+.footer-terms {
+    float: right;
+}
+
+.footer-terms a {
+    color: #999;
+}
+/*--end Footer end--*/
+
+/*Main View*/
+body>section {
+    padding-top: 100px;
+    min-height: 900px;
+    min-height: -webkit-calc(100% - 50px);
+    min-height: -moz-calc(100% - 50px);
+    min-height: calc(100% - 50px);
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+
+.back
+{
+	display: none;
+}
+
+.welcome-wrap
+{
+	position: fixed;
+    bottom: 0px;
+    right: none;
+    width: 100%;
+    height: 100%;
+    z-index: 150;
+    /*+++++设置背景的灰色覆盖+++++*/
+    /*background: rgba(0, 0, 0, 0.2);*/
+    /*=====设置背景的灰色覆盖=====*/
+    overflow: scroll;
+}
+
+.head-head-welcome
+{
+    color: rgba(0, 118, 166, 0.8);
+    font-weight: bold;
+    font-size: 2rem;
+    /*margin-left: 55%;*/
+    background: transparent;
+    width: 30%;
+    /*background: rgba(190, 190, 190);*/
+    /*border: 3px solid #0076a6;*/
+    padding: 10px;
+    margin: 0px auto;
+    height: auto;
+    min-width: 350px;
+}
+
+.div-head-head-welcome
+{
+    display: block;
+    text-align: center;
+}
+
+.section-login_panel
+{
+	width: 60%;
+    min-height: 150px;
+    height: auto;
+    margin: 10px auto;
+    padding: 20px;
+    /* background: rgba(45, 128, 98, 0.5); */
+    overflow: hidden;
+}
+
+.article-login_panel
+{
+    text-align: center;
+}
+
+.article-login_panel input
+{
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    width: 240px;
+    margin: 10px auto;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.head-login_panel
+{
+    display: block;
+    width: 100%;
+    clear: both;
+    margin: 0px 0px 10px 1px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.head-wrap
+{
+    display: block;
+    width: 210px;
+    text-align: center;
+    height: auto;
+    margin: 0px auto;
+}
+
+.login-logo
+{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    float: left;
+}
+
+.login-announce
+{
+    display: block;
+    float: left;
+    margin: 15px 0px 0px 10px;
+    color: rgba(0, 118, 166, 1);
+}
+
+.article-login_panel .ul-error-message
+{
+    color: rgba(0, 118, 166, 1);
+}
+
+/*+++++记住密码及忘记密码+++++*/
+.article-login_panel .div-account-pass
+{
+    display: inline-block;
+    margin: 0.1rem auto;
+    border-radius: 0.5rem;
+    /*line-height: 2rem;*/
+    height: auto;
+    width: 15rem;
+}
+
+.article-login_panel .div-save-pass
+{
+    display: inline-block;
+    border-radius: 0.5rem;
+    /*line-height: 2rem;*/
+    height: auto;
+    width: auto;
+    float: left;
+    color: black;
+}
+
+.article-login_panel .div-find-pass
+{
+    display: inline-block;
+    height: auto;
+    width: 50%;
+    float: right;
+}
+
+.article-login_panel .div-save-pass input[type='checkbox']
+{
+    display: inline-block;
+    height: auto;
+    width: auto;
+    margin:0 0.4rem;
+}
+
+.article-login_panel .find-pwd:hover 
+{
+    text-decoration: underline;
+}
+/*=====记住密码及忘记密码=====*/
+
+.sign-button-list
+{
+    display: block;
+    width: 240px;
+    height: auto;
+    margin: 0px auto;
+}
+
+.article-login_panel input[name="signin_button"]
+{
+    display: inline-block;
+    width: 115px;
+    height: 35px;
+    margin: 2px auto;
+    border: 0px;
+    background: transparent;
+    color: rgba(230, 38, 138, 1);
+    outline: none;
+    padding-left: 0px;
+}
+
+.article-login_panel input[name="signup_button"]
+{
+    display: inline-block;
+    width: 115px;
+    height: 35px;
+    margin: 2px auto;
+    border: 0px;
+    border-radius: 5px;
+    background: transparent;
+    color: rgba(230, 38, 138, 1);
+    outline: none;
+    padding-left: 0px;
+}
+
+.article-login_panel button
+{
+    width: 115px;
+    height: 35px;
+    margin: 2px auto;
+    border: 0px;
+    background: transparent;
+    color: rgba(0, 118, 166, 1);
+}
+
+.foot-welcome
+{
+	display: block;
+	color: rgba(0, 118, 166, 0.8);
+	width: 100%;
+	margin: 1px auto;
+	border-top: 2px dashed rgba(0, 118, 166, 0.7);
+}
+
+.li-foot-welcome
+{
+	display: block;
+	margin: 1px auto 8px auto;
+	width: auto;
+    text-align: center;
+}
+
+.li-foot-welcome-1
+{
+	margin-top: 10px;
+	/*width: 75%;*/
+}
+
+.li-foot-welcome-2
+{
+	/*width: 60%;*/
+}
+
+.li-foot-welcome-3
+{
+	/*width: 60%;*/
+}
+
+.li-foot-welcome-4
+{
+	/*width: 70%;*/
+}
+
+.li-foot-welcome-5
+{
+	/*width: 70%;*/
+}
+
+.footer-copyright
+{
+    font-size: 0.6rem;
+    text-align: center;
+    float: none;
+}

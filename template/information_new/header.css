@@ -1,0 +1,841 @@
+body
+{
+	font-size: 18px;
+	margin: 0;
+    background-color: rgb(247,248,248);
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+body>section
+{
+    width: 100%;
+    padding-top: 60px;
+}
+
+input, select
+{
+    font-size: 13px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.nav-header
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin : 0 auto ;
+	height: 43px;
+	display: block;
+	z-index: 10;
+}
+
+.nav-bottom-layer
+{
+	position: relative;
+	/*background-color: rgb(19,72,110);*/
+	width:100%;
+    height: 100%;
+    min-width:  980px;
+}
+
+.nav-middle-layer
+{
+    background-color:rgb(0,118,166);
+    width: 100%;
+    height: 60px;
+}
+
+.nav-upper-layer
+{
+    position: relative;
+    top: 0;
+    background-color: rgb(0,118,166);
+    margin-bottom: 5px;
+    height: 60px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width:  980px;
+}
+
+/*导航图标*/
+.nav-logo
+{
+	height: 60px;
+	cursor: pointer;
+	float: left;
+	border:0;
+	overflow: hidden;
+	vertical-align:top;
+}
+.nav-logo>a>img
+{
+	border:none;
+}
+
+/*导航栏*/
+.nav-main-header
+{
+    width : 32%;
+	height: 60px;
+	font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	text-align:center;
+	float: left;
+	margin: 0 0 0 50px;
+	overflow: auto;
+}
+.nav-main-topic
+{
+	width: 20%;
+	cursor: pointer;
+	height: 60px;
+	float: left;
+	overflow: auto;
+}
+.nav-main-topic:hover
+{
+	background-color: rgb(19,72,110);
+}
+.nav-main-topic>span
+{
+	line-height: 60px;
+	zoom: 1;
+	padding: 0 ;
+	overflow: auto;
+}
+.nav-main-header>a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*搜索栏*/
+.nav-search
+{
+	width : 20%;
+	height: 100%;
+	float: left;
+	height: 60px;
+	overflow: hidden;
+}
+.nav-search>input
+{
+	width: 80%;
+	margin-top: 17px;
+	height:26px;
+	border-radius: 4px 0 0 4px;
+	border: 1px solid #ccc;
+	float: left;
+    font-size: 13px;
+}
+.nav-search>a>img
+{
+	cursor: pointer;
+	width: 26px;
+	height: 26px;
+	line-height:26px;
+	margin-top: 17px;
+	text-align: center;
+	border: 2px solid rgb(255,141,0);
+	border-radius: 0 4px 4px 0;
+	float: left;
+}
+
+/*未登录状态*/
+.nav-login
+{
+	cursor: pointer;
+	float: right;
+	height: 60px;
+	padding: 0 20px 0 0;
+	width: 10%;
+	overflow: auto;
+}
+.nav-login>span
+{
+	float: right;
+	line-height: 60px;
+	color: #fff;
+}
+.nav-login>span>a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*已登录状态*/
+.nav-user
+{
+	float: right;
+	padding: 0 10px 0 0;
+	width: 20%;
+}
+.nav-setting
+{
+	height: 60px;
+
+}
+.nav-setting>a
+{
+	float: right;
+	text-decoration: none;
+}
+.nav-setting>a>span
+{
+	cursor: pointer;
+	float: right;
+	line-height: 60px;
+	color: #fff;
+	padding: 0 5px 0 5px;
+}
+.nav-setting>a>span>img
+{
+	border:none;
+}
+
+/*下拉菜单*/
+.nav-ctrl-panel
+{
+	margin-top: 5px;
+	float: right;
+	background-color: rgb(0,118,166);
+	height: 150px;
+	text-align: center;
+	box-shadow: 0 0 5px #000;
+	padding: 0; 
+	width: 70%;
+    display: none;
+}
+.nav-ctrl-panel>ul
+{
+	margin: 0;
+	cursor: pointer;
+	color: #fff;
+	padding: 0;
+}
+.nav-ctrl-panel>ul>li
+{
+	font-size: 90%;
+	line-height: 50px;
+	list-style-type: none;
+	width: 100%;
+}
+.nav-ctrl-panel>ul>li:hover
+{
+	background-color: rgb(19,72,110);
+}
+.nav-ctrl-panel>ul>li>a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+@media screen and (max-width: 980px)
+{
+	.nav-upper-layer
+	{
+		width: 100%;
+	padding-left: 0%;
+	padding-right: 0%;
+	} 
+	.nav-header
+	{
+		position: absolute;
+		min-width:  980px;
+	}
+	body
+	{
+		min-width:  1000px;
+		position: absolute;
+		overflow: auto;
+	}
+}
+
+
+.content
+{
+	background-color: rgb(247,248,248);
+	margin: 0;
+	width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.main
+{
+    width: 80%;
+    min-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*路径*/
+.direction
+{
+    font-size: 13px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.direction>span>a
+{
+    text-decoration: none;
+    color: rgb(76, 148, 181);
+}
+
+.direction>span>img
+{
+    vertical-align: initial;
+    height: 10px;
+    margin: 0 2px 0 2px;
+}
+
+.direction>span
+{
+    color: black;
+    cursor: default;
+}
+
+/*搜索和发表文章*/
+.search-and-release
+{
+    width: 998px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.search-article
+{
+    float: left;
+}
+.search-article>span>select
+{
+    height: 36px;
+    width: 225px;
+    padding: 0;
+    margin: 0;
+    border: 2px solid rgb(210,210,210);
+}
+.search-article>span>input
+{
+    height: 32px;
+    width: 280px;
+    padding: 0;
+    margin: 0;
+    border: 2px solid rgb(210,210,210);
+}
+.search-article>span>button
+{
+    height: 36px;
+    width: 110px;
+    color: white;
+    background-color: rgb(0,118,160);
+    border: 2px solid rgb(0,118,160);
+    border-radius: 2px 2px 2px 2px;
+}
+.release-article
+{
+    float: right;
+}
+
+.release-article>button
+{
+    height: 36px;
+    width: 125px;
+    color: white;
+    background-color: rgb(255,141,0);
+    border: 2px solid rgb(255,141,0);
+    border-radius: 2px 2px 2px 2px;
+}
+
+
+.page-list>a
+{
+    font: 12px/1.5 Tahoma,Verdana,MSMINCHO;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0 8px 0 8px;
+    height: 26px;
+    line-height: 26px;
+    
+}
+
+/*topic image*/
+.topicimage
+{
+    width: 998px;
+    height: 500px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;  
+    border-radius:0 0 5px 5px;
+    box-shadow: 0 2px 2px #888888;
+    margin-bottom: 15px;
+}
+.topicimage-l1
+{
+    position: relative;
+    top: 0;
+    width: 998px;
+    height: 55px;
+    background-color: rgb(16, 135, 183);
+    border: 1px solid rgb(16, 135, 183);
+    border-radius: 3px 3px 0 0;
+}
+.topicimage-l2
+{
+    position: relative;
+    width: 966px;
+    height: 432px;
+    margin: 6px 17px 7px 17px;
+}
+.puzzle1
+{
+    display: inline;
+    float: left;
+    width: 130px;
+    height: 100px;
+    margin: 4px;
+    padding: 0;
+}
+.puzzle1>p
+{
+    float: right;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    font-family:"幼圆","YOUYUAN",Georgia,Serif;
+    font-size: 60px; 
+    color: #fff;
+    margin: 0;
+    /*margin-top: 35px;*/
+    font-weight: bold;
+}
+
+.innyc
+{
+    
+    width: 998px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:0 0 5px 5px;
+    box-shadow: 0 2px 2px #888888;
+    margin-bottom: 15px;
+}
+.special
+{
+    width: 998px;
+    height: 55px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:5px 5px 5px 5px;
+    box-shadow: 0 2px 2px #888888; 
+    margin-bottom: 15px;
+}
+
+
+p#yahei
+{
+    font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-size: 21px;
+    
+    height: 43px;
+    margin: 12px 0 0 10px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+p#heiti
+{
+    font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.news
+{
+    position: relative;
+    width: 1000px;
+    height: 139px;
+    border: 1px solid rgb(210, 210, 210);
+    border-width: 0 0 1px 0;
+}
+.news-logo
+{
+    position: relative;
+    float: left;
+    height: 139px;
+    width: 130px;
+    text-align: center;
+}
+.news-logo>img
+{
+    margin-top: 34px;
+}
+.news-content
+{
+    float: left;
+    height: 139px;
+    width: 450px;
+}
+.news-reply
+{
+    float: right;
+    height: 139px;
+    width: 320px;
+    margin-right: 20px;
+}
+.people-icon
+{
+    float: left;
+    height: 139px;
+    width: 50px;
+    text-align: center;
+}
+.people-icon>img
+{
+    margin-top: 50px;
+    width: 40px;
+    height: 40px;
+}
+.reply-info
+{
+    float: left;
+    height: 105px;
+    width: 260px;
+    padding-top: 49px;
+    margin: 0;
+}
+.footer
+{
+	margin-top: 50px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	color: rgb(160,160,160);
+}
+
+
+/*Popup*/
+.back-popup {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.div-popup {
+    /*display: none; Holy shit! It causes google map display error! */
+    left: -10000px;
+    position: fixed;
+    bottom: 0px;
+    right: none;
+    width: 100%;
+    height: 100%;
+    z-index: 150;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: scroll;
+}
+
+.popup-close {
+    display: block;
+    float: right;
+    font-size: 1.5rem;
+    padding: 6px 12px;
+}
+
+.popup-close>span:hover {
+    color: #CCC;
+}
+
+.popup-close>span {
+    color: white;
+}
+
+.popup-main {
+    width: 50%;
+    background: #fff;
+    padding: 10px;
+    margin: 20px auto;
+    height: auto;
+    border: 3px solid #0076a6;
+}
+/*++++++++++popup login_panel++++++++++*/
+.div-popup-login_panel 
+{
+    left: -10000px;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: none;
+    width: 100%;
+    height: 100%;
+    z-index: 150;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: scroll;
+}
+
+.popup-login_panel-close 
+{
+    display: block;
+    float: right;
+    font-size: 2rem;
+    padding: 6px 12px;
+    border-radius: 0 0 0 100%;
+    background: rgba(250, 250, 250, 0.3);
+}
+
+.popup-login_panel-close:hover 
+{
+    background: rgba(250, 250, 250, 0.5);
+}
+
+.popup-login_panel-close>span 
+{
+    color: #aaa;
+}
+
+.popup-login_panel
+{
+    width: 30%;
+    background: #fff;
+    border: 3px solid #0076a6;
+    padding: 10px;
+    margin: 100px auto;
+    height: auto;
+}
+
+.popup-login_panel>header 
+{
+    border-bottom: 1px solid #222;
+    margin-bottom: 10px;
+}
+
+.popup-login_panel>header>h1
+{
+    margin-bottom: 4px;
+    font-size: 2rem;
+    background: #fdc286;
+}
+
+.back
+{
+    display: none;
+}
+
+.article-login_panel
+{
+    text-align: center;
+}
+
+.article-login_panel input
+{
+    width: 85%;
+    height: 35px;
+    margin: 2px auto;
+    border: 2px solid rgba(0, 118, 166, 1);
+    border-radius: 5px;
+}
+
+.head-login_panel
+{
+    display: block;
+    margin: 0px 0px 10px 1px;
+    float: left;
+}
+
+.login-logo
+{
+    display: block;
+    float: left;
+}
+
+.login-announce
+{
+    display: block;
+    float: left;
+    margin: 15px 0px 0px 10px;
+    color: rgba(0, 118, 166, 1);
+}
+
+.article-login_panel .ul-error-message
+{
+    color: rgba(0, 118, 166, 1);
+}
+
+/*+++++记住密码及忘记密码+++++*/
+.article-login_panel .div-account-pass
+{
+    display: inline-block;
+    margin: 0.1rem auto;
+    border-radius: 0.5rem;
+    /*line-height: 2rem;*/
+    height: auto;
+    width: 15rem;
+}
+
+.article-login_panel .div-save-pass
+{
+    display: inline-block;
+    border-radius: 0.5rem;
+    /*line-height: 2rem;*/
+    height: auto;
+    width: auto;
+    float: left;
+}
+
+.article-login_panel .div-find-pass
+{
+    display: inline-block;
+    height: auto;
+    width: 50%;
+    float: right;
+}
+
+.article-login_panel .div-save-pass input[type='checkbox']
+{
+    height: auto;
+    width: auto;
+    margin:0 0.4rem;
+}
+.article-login_panel .find-pwd
+{
+    text-decoration: none;
+}
+.article-login_panel .find-pwd:hover 
+{
+    text-decoration: underline;
+}
+/*=====记住密码及忘记密码=====*/
+button
+{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#signin_button
+{
+    
+    width: 35%;
+    height: 35px;
+    margin: 2px auto;
+    border: 0px;
+    background: transparent;
+    color: rgba(230, 38, 138, 1);
+    outline: none;
+}
+
+#signup_button
+{
+    width: 30%;
+    height: 35px;
+    margin: 2px auto;
+    border: 0px;
+    border-radius: 5px;
+    background: transparent;
+    color: rgba(230, 38, 138, 1);
+    outline: none;
+}
+
+.article-login_panel button
+{
+    width: 30%;
+    height: 35px;
+    margin: 2px auto;
+    border: 0px;
+    background: transparent;
+    color: rgba(0, 118, 166, 1);
+}
+/*==========popup login_panel==========*/
+
+/* TO DO */
+
+.view-left {
+    position: relative;
+    display: block;
+    float: left;
+    width: 32%;
+}
+
+.view-main {
+    position: relative;
+    display: block;
+    float: left;
+    width: 64%;
+    margin-left: 4%;
+}
+
+.map-input {
+    display: block;
+    width: 500px;
+    height: 400px;
+}
+
+.map-input img {
+    max-width: none;
+}
+
+.map-output {
+    display: block;
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+}
+
+.map-output img {
+    max-width: none;
+}
+
+section.section-button-list-small
+{
+    display: block;
+    height: auto;
+    width: auto;
+}
+
+.ul-button-list-small-large-button > li
+{
+    display: inline-block;
+    height: auto;
+    margin: 3px 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.ul-button-list-small-large-button > li > button
+{
+    background-color: rgba(255, 141, 0, 1);
+    border: 0;
+    display:inline-block;
+    color:white;
+    font-size:0.875rem;
+    height:25px;
+    line-height:25px;
+    width:100%;
+    text-align:center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+}
+
+ul
+{
+    list-style-type: none;
+}
+.ul-error-message
+{
+    padding: 0;
+}
+

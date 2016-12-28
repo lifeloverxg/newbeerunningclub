@@ -1,0 +1,178 @@
+.article-frame-wrap
+{
+	width: 100%;
+	padding: 2rem;
+	background: #c1e6e2;
+	position: relative;
+	height: 100%;
+	min-height: 1200px;
+	overflow: hidden;
+}
+
+.article-detail-view-left
+{
+	display: block;
+	width: 30%;
+	margin-right: 5%;
+	position: relative;
+	float: left;
+}
+
+.author-logo
+{
+	width: 100%;
+}
+
+.div-logo-large-back
+{
+	display: none;
+}
+
+.article-detail-view-left .section-info
+{
+	margin-top: 5%;
+}
+
+.article-detail-view-left .info-title
+{
+	/*background: rgba(218, 112, 214, 0.2);*/
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	word-wrap: normal;
+	word-break: normal;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 1.2rem;
+	color: #FFF;
+}
+
+.article-detail-view-left .info-list-content
+{
+	width: 60%;
+}
+
+.section-target-article-list-small
+{
+	padding-top: 10px;
+	overflow: hidden;
+	color: white;
+}
+
+.ul-target-article-list-small>li
+{
+	width:100%;
+	display: block;
+	float: left;
+	margin: 0 auto;
+	margin-bottom: 2%;
+	background-color: #87f2d4;
+}
+
+.ul-target-article-list-small>li:hover
+{
+	background-color: #679eb8;
+}
+
+.content-head
+{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	display: block;
+	width: 100%;
+	/*background-color: rgba(218, 112, 214, 0.1);*/
+}
+
+
+.list-title-article
+{
+	width: 100%;
+	display: block;
+	text-align: center;
+	white-space: nowrap;
+	color: #000;
+   	overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.article-detail-view-right
+{
+	display: block;
+	width: 65%;
+	position: relative;
+	float: left;
+	background: transparent;
+}
+
+.section-detail-article-content
+{
+	display: block;
+	width: 100%;
+	padding: 20px;
+	position: relative;
+	float: left;
+	background: white;
+}
+
+.article-title {
+	padding: 10px;
+	vertical-align: top;
+	font-size: 1.5rem;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.article_tag_category
+{
+	display: block;
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+.article-tag
+{
+	display: inline-block;
+	width: 40%;
+	position: relative;
+	float: left;
+}
+
+.article-category
+{
+	display: inline-block;
+	width: 40%;
+	position: relative;
+	float: right;
+}
+
+.article-content
+{
+	float: left;
+	display: block;
+	width: 100%;
+	position: relative;
+	
+	margin-top: 2%;
+	min-height: 400px;
+	/*text-indent: 1.5rem;*/
+	word-wrap: break-all;
+	padding: 10px;
+	line-height: 30px;
+}
+
+.article-content img {
+	display: inline-block;
+}
+
+.article-comment-list {
+	overflow: hidden;
+	padding: 20px;
+}
+
+.comment-textarea {
+	resize: none;
+}

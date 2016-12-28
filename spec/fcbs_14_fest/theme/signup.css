@@ -1,0 +1,100 @@
+.div-auth {
+	width: 470px;
+	padding: 40px 60px 48px 60px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 36px;
+	text-align: center;
+	background: rgba(200, 200, 200, 0.2);
+	border-radius: 25px;
+}
+
+.div-auth h1 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: #EEE;
+}
+
+.div-auth input {
+	font-size: 1.5rem;
+	width: 260px;
+	padding: 2px 8px;
+	display: inline-block;
+	border-top: 0;
+}
+
+.div-auth input[type=submit] {
+	margin-top: 25px;
+	border: 0px;
+	border-radius: 25px;
+}
+
+.div-auth input[name="last_name"] {
+	width: 130px;
+	border-radius: 10px 0 0 0;
+}
+
+.div-auth input[name="first_name"] {
+	width: 130px;
+	border-radius: 0 10px 0 0;
+}
+
+.div-auth input[name="signup_pass2"] {
+	border-radius: 0 0 10px 10px;
+}
+
+.div-auth input[name="signin_username"] {
+	border-radius: 10px 10px 0 0;
+}
+
+.div-auth input[name="signin_pass"] {
+	border-radius: 0 0 10px 10px;
+}
+
+.div-auth footer>button {
+	font-size: 1.5rem;
+	display: inline-block;
+	margin-top: 10px;
+	width: 260px;
+	border: 0;
+	border-radius: 25px;
+}
+
+.div-signin footer>button{
+	background: #AF94D4;
+}
+
+.div-signin footer>button:hover {
+	background: #b498d9;
+}
+
+.div-signup footer>button {
+	background: #767DE0;
+}
+
+.div-signup footer>button:hover {
+	background: #7C84ED;
+}
+
+.ul-error-message {
+	display: inline-block;
+	width: 260px;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.ul-error-message>li {
+	font-size: 1rem;
+	text-align: left;
+	margin: 5px 0;
+	color: #f798ae;
+}
+
+form {
+	display: block;
+	font-size: 0;
+}
+
+.back  {
+	display: none;
+}

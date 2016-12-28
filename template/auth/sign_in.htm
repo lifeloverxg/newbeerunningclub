@@ -1,0 +1,23 @@
+<h2>登录Zus</h2>
+<p></p>
+<form id="signin_form" name="signin_form" action="<?php echo $this->home."auth/handler.php" ?>" method="post">
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					<input class="input-border" type="email" name="signin_email" placeholder="Email" id="signin_email" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input class="input-border" type="password" name="signin_password" placeholder="Password" id="signin_password" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<br><input type="submit" name="signin_submit" id="signin_submit" class="btn btn-primary" />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>

@@ -1,0 +1,124 @@
+.section-trends
+{	
+	position: relative;
+    display: block;
+    width: auto;
+    min-height: 200px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+/*++++++++++新加的为动态动起来服务的CSS++++++++++*/
+#trend-wrap
+{
+    height: auto;
+}
+
+#trend-content
+{
+    width:100%;
+    height:310px;
+    overflow:hidden;
+}
+
+#trend-top
+{
+    width:100%;
+    height:auto;
+}
+
+#trend-bottom
+{
+    width:100%;
+    height:auto;
+}
+
+/*==========新加的为动态动起来服务的CSS==========*/  
+
+.section-trends ul li {
+    list-style-type: none;
+    display: block;
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+.section-trends ul li:nth-child(even) {
+    background: #ececec;
+}
+
+.news-tag
+{
+    color: black;
+    margin: 0 0 0 1%;
+}
+
+.news-tag a {
+    color: #0076a6;
+}
+
+.trends-content {
+    display: inline-block;
+    width: 98%;
+    vertical-align: top;
+    color: black;
+    margin: 0 0 0 2%;
+    margin-bottom: 0px;
+    font-size: 0.9rem;
+}
+
+.trends-content a {
+    color: #0076a6; 
+}
+
+.trends-time
+{
+	float: left;
+	display: block;
+	height: 25px;
+	width: 98%;
+	text-align: left;
+	font-size: 0.8rem;
+	color: #999;
+	margin-left: 2%;
+}
+
+.people-left-bot
+{
+	position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.people-right-top
+{
+	position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.people-right-top-left
+{
+	position: relative;
+    display: block;
+    float: left;
+    width: 55%;
+}
+
+.people-right-top-right
+{
+	position: relative;
+    display: block;
+    float: left;
+    width: 42%;
+    margin-left: 2%;
+}
+
+.people-right-bot
+{
+	position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+}

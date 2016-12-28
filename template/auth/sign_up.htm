@@ -1,0 +1,28 @@
+<h2>注册Zus</h2>
+<p></p>
+<form id="sign_up_form" name="sign_up_form" action="<?php echo $this->home."auth/handler.php"; ?>" method="post">
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					<input class="input-border" type="email" name="signup_email" placeholder="Email" id="signup_email" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input class="input-border" type="password" name="signup_password" placeholder="Password" id="signup_password" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input class="input-border" type="text" name="signup_code" placeholder="Invite Code" id="signup_code" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<br><input type="submit" name="signup_submit" id="signup_submit" class="btn btn-primary" />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>

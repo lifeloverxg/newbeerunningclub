@@ -1,0 +1,72 @@
+.div-pudding 
+{
+	display: block;
+	width: 50%;
+	/*padding: 40px 60px 48px 60px;*/
+	padding: 10px;
+	margin: auto;
+	/*margin-top: 20px;*/
+	text-align: center;
+	background: rgba(0, 116, 168, 1);
+	border-radius: 25px;
+	min-height: 500px;
+}
+
+.error-message
+{
+	color: white;
+	font-size: 1.5rem;
+}
+
+.div-pudding img
+{
+	display: block;
+	/*float: left;*/
+	width: 80%;
+	height: 80%;
+	margin: 0px auto;
+}
+
+@media screen and (max-width: 1095px) and (min-width: 1250px) {
+	.error-message
+	{
+		font-size: 1.2rem;
+	}
+	.div-pudding 
+	{
+		min-height: 200px;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 1094px) {
+	.error-message
+	{
+		font-size: 1.2rem;
+	}
+	.div-pudding 
+	{
+		min-height: 200px;
+	}
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 513px) {
+	.error-message
+	{
+		font-size: 1rem;
+	}
+	.div-pudding 
+	{
+		min-height: 200px;
+	}
+}
+@media screen and (max-width: 512px) {
+	.error-message
+	{
+		font-size: 0.5rem;
+	}
+	.div-pudding 
+	{
+		min-height: 200px;
+	}
+}

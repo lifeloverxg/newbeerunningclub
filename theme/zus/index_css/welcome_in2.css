@@ -1,0 +1,332 @@
+/* 全局配置 */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style-type: none;
+    margin: 0;
+}
+
+a, a:hover, a:link, a:visited, a:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+	display: inline-block;
+	margin: 0.1rem auto;
+	border-radius: 0.5rem;
+	line-height: 2rem;
+	height: 2rem;
+	width: 15rem;
+	padding: 0.5rem 1rem;
+}
+
+input[type='button'] {
+	margin-top: 2rem;
+	padding: 0;
+	background: rgb(240, 240, 240);
+}
+
+h1 {
+	font-size: 3rem;
+	font-family: "幼圆", "宋体", "Arial", sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+
+em {
+	font-style: normal;
+	color: #f4424a;
+}
+
+html, body {
+	font-size: 100%;
+ 	font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    width: 100%;
+	background: rgba(111, 219, 178, 0.8);
+	
+}
+
+.section-home {
+	position: fixed;
+	top: 0; bottom: 0; left: 0; right: 0;
+	background: url("../images/login-background.png") bottom repeat-x;
+}
+
+/* 主菜单 */
+.main-menu>li {
+	position: absolute;
+	/*width: 25%;*/
+}
+
+.main-menu>li>a {
+	display: inline-block;
+	font-size: 150%;
+	text-align: center;
+	color: #222;
+}
+@-webkit-keyframes eventHover {
+	0% {  }
+	25% { -webkit-transform: rotate(13deg); }
+	50% {  }
+	75% { -webkit-transform: rotate(3deg); }
+	100% {  }
+}
+@-o-keyframes eventHover {
+	0% {  }
+	25% { -o-transform: rotate(13deg); }
+	50% {  }
+	75% { -o-transform: rotate(3deg); }
+	100% {  }
+}
+@-moz-keyframes eventHover {
+	0% {  }
+	25% { -moz-transform: rotate(13deg); }
+	50% {  }
+	75% { -moz-transform: rotate(3deg); }
+	100% {  }
+}
+@keyframes eventHover {
+	0% {  }
+	25% { transform: rotate(13deg); }
+	50% {  }
+	75% { transform: rotate(3deg); }
+	100% {  }
+}
+#menu-event {
+	top: 5%; left: 60%;
+	background: url("../images/uni-1.png") no-repeat;
+	background-size: contain;
+	-webkit-transform: rotate(8deg);
+	-moz-transform: rotate(8deg);
+	-ms-transform: rotate(8deg);
+	-o-transform: rotate(8deg);
+	transform: rotate(8deg);
+}
+#menu-event:hover {
+	-webkit-animation: eventHover 0.3s;
+	-moz-animation: eventHover 0.3s;
+	-o-animation: eventHover 0.3s;
+	animation: eventHover 0.3s;
+}
+
+@-webkit-keyframes groupHover {
+	0% {  }
+	25% { -webkit-transform: rotate(19deg); }
+	50% {  }
+	75% { -webkit-transform: rotate(9deg); }
+	100% {  }
+}
+@-o-keyframes groupHover {
+	0% {  }
+	25% { -o-transform: rotate(19deg); }
+	50% {  }
+	75% { -o-transform: rotate(9deg); }
+	100% {  }
+}
+@-moz-keyframes groupHover {
+	0% {  }
+	25% { -moz-transform: rotate(19deg); }
+	50% {  }
+	75% { -moz-transform: rotate(9deg); }
+	100% {  }
+}
+@keyframes groupHover {
+	0% {  }
+	25% { transform: rotate(19deg); }
+	50% {  }
+	75% { transform: rotate(9deg); }
+	100% {  }
+}
+#menu-group {
+	top: 18%; left: 70%;
+	background: url("../images/uni-2.png") no-repeat;
+	background-size: contain;
+	-webkit-transform: rotate(14deg);
+	-moz-transform: rotate(14deg);
+	-ms-transform: rotate(14deg);
+	-o-transform: rotate(14deg);
+	transform: rotate(14deg);
+}
+#menu-group:hover {
+	-webkit-animation: groupHover 0.3s;
+	-moz-animation: groupHover 0.3s;
+	-o-animation: groupHover 0.3s;
+	animation: groupHover 0.3s;
+}
+
+@-webkit-keyframes peopleHover {
+	0% {  }
+	25% { -webkit-transform: rotate(0deg); }
+	50% {  }
+	75% { -webkit-transform: rotate(-10deg); }
+	100% {  }
+}
+@-o-keyframes peopleHover {
+	0% {  }
+	25% { -o-transform: rotate(0deg); }
+	50% {  }
+	75% { -o-transform: rotate(-10deg); }
+	100% {  }
+}
+@-moz-keyframes peopleHover {
+	0% {  }
+	25% { -moz-transform: rotate(0deg); }
+	50% {  }
+	75% { -moz-transform: rotate(-10deg); }
+	100% {  }
+}
+@keyframes peopleHover {
+	0% {  }
+	25% { transform: rotate(0deg); }
+	50% {  }
+	75% { transform: rotate(-10deg); }
+	100% {  }
+}
+#menu-people {
+	top: 38%; left: 72%;
+	background: url("../images/uni-3.png") no-repeat;
+	background-size: contain;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+#menu-people:hover {
+	-webkit-animation: peopleHover 0.3s;
+	-moz-animation: peopleHover 0.3s;
+	-o-animation: peopleHover 0.3s;
+	animation: peopleHover 0.3s;
+}
+
+@-webkit-keyframes faqHover {
+	0% {  }
+	25% { -webkit-transform: rotate(25deg); }
+	50% {  }
+	75% { -webkit-transform: rotate(15deg); }
+	100% {  }
+}
+@-o-keyframes faqHover {
+	0% {  }
+	25% { -o-transform: rotate(25deg); }
+	50% {  }
+	75% { -o-transform: rotate(15deg); }
+	100% {  }
+}
+@-moz-keyframes faqHover {
+	0% {  }
+	25% { -moz-transform: rotate(25deg); }
+	50% {  }
+	75% { -moz-transform: rotate(15deg); }
+	100% {  }
+}
+@keyframes faqHover {
+	0% {  }
+	25% { transform: rotate(25deg); }
+	50% {  }
+	75% { transform: rotate(15deg); }
+	100% {  }
+}
+#menu-faq {
+	top: 50%; left: 60%;
+	background: url("../images/uni-4.png") no-repeat;
+	background-size: contain;
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+#menu-faq:hover {
+	-webkit-animation: faqHover 0.3s;
+	-moz-animation: faqHover 0.3s;
+	-o-animation: faqHover 0.3s;
+	animation: faqHover 0.3s;
+}
+
+/* 推荐列表 */
+.div-recommend {
+	position: absolute;
+	top: 5%;
+	/*width: 60%;*/
+}
+
+.ul-recommend {
+	float: right;
+	max-width: 400px;
+	max-height: 400px;
+}
+
+.ul-recommend>li {
+	float: left;
+	border: 2px solid rgba(255, 255, 255, 0);
+}
+
+#li-recommend-0 {
+	position: relative;
+	left: -200px;
+	top: -200px;
+}
+
+#li-recommend-1 {
+	position: relative;
+	left: 200px;
+	top: -200px;
+}
+
+#li-recommend-2 {
+	position: relative;
+	left: -200px;
+	top: 200px;
+}
+
+#li-recommend-3 {
+	position: relative;
+	left: 200px;
+	top: 200px;
+}
+
+
+/* 页脚 */
+body>footer {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    clear: both;
+}
+
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: white;
+    line-height: 50px;
+}
+
+.footer-content>ul>li {
+    list-style-type: none;
+    display: inline;
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+.footer-copyright {
+    float: left;
+}
+
+.footer-terms {
+    float: right;
+}
+
+.footer-terms a {
+    color: white;
+}
