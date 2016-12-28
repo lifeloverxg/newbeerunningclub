@@ -3,7 +3,7 @@
 		<a href="<?php echo $home; ?>">首页</a>
 	</span>
 	<span>
-		<a href="<?php echo $home."people"; ?>">个人</a>
+		<a href="<?php echo $home."people"; ?>"><?php echo $auth['title']; ?></a>
 	</span>
 	<span>
 		打卡

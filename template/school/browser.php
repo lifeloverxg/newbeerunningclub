@@ -2,7 +2,7 @@
 $home = '../';
 include_once ($home.'core.php');
 include_once ($home.'template/information_new/back.php');
-if(!defined('IN_ZUS')) {
+if(!defined('IN_NBRC')) {
 		exit('<h1>503:Service Unavailable @information:browser</h1>');
 	}
 

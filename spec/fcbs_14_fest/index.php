@@ -3,7 +3,7 @@
 	include_once($home.'core.php');
 	include_once('handler/util.php');
 	
-	if (!defined('IN_ZUS')) {
+	if (!defined('IN_NBRC')) {
 		exit('<h1>503:Service Unavailable @spec/fcbs_14_fest:index</h1>');
 	}
 

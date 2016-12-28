@@ -5,7 +5,7 @@
 						<img src="<?php echo $home . "theme/images/login_panel/login_logo.png"; ?>">
 					</div>
 					<div class="login-announce">
-						<span>NYCUni</span><br>
+						<span>NewBee Running Club</span><br>
 						<span>纽约新蜂跑团</span>
 					</div>
 				</div>

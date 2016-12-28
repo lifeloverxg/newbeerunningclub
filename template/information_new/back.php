@@ -1,6 +1,6 @@
 <?php
 
-@define('IN_ZUS', TRUE);
+@define('IN_NBRC', TRUE);
 include_once ($home."core.php");
 
 class ZUS_Database

@@ -1,5 +1,5 @@
 <?php
-	if(!defined('IN_ZUS')) {
+	if(!defined('IN_NBRC')) {
 		exit('<h1>403:Forbidden @util:event.php</h1>');
 	}
 	
@@ -386,24 +386,13 @@
 						}
 						else
 						{
-							if ( ($_SCONFIG['version'] == 'debug') || (AccountDAO::isMobile()) )
-							{
-								$main_oper = array(
-												 // 'action' => 'visit(\'\')',
-												 'action' => 'visit(\'\')',	
-												 'class'  => 'login',
-												 'title' => '请先登录'
-												 );
-							}
-							else
-							{
-								$main_oper = array(
+
+							$main_oper = array(
 												 // 'action' => 'visit(\'\')',
 												 'action' => 'show_login_panel()',	
 												 'class'  => 'login',
 												 'title' => '请先登录'
-												 );
-							}	
+												 );	
 						}
 
 						array_push($oper_button['large'], $main_oper);

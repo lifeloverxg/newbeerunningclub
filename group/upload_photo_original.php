@@ -2,7 +2,7 @@
 	$home = '../';
 	include_once($home.'core.php');
 	
-	if (!defined('IN_ZUS') && !defined('IN_FCBS')) {
+	if (!defined('IN_NBRC') && !defined('IN_FCBS')) {
 		exit('<h1>503:Service Unavailable @group:upload photo</h1>');
 	}
 	

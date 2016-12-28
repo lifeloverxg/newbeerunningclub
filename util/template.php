@@ -1,5 +1,5 @@
 <?php
-	if(!defined('IN_ZUS')) {
+	if(!defined('IN_NBRC')) {
 		exit('<h1>403:Forbidden @util:auth.php</h1>');
 	}
 	

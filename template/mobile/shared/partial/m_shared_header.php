@@ -104,7 +104,20 @@
 								</a>
 							</li>
 							<li <?php echo (preg_match("/\/people/i", $_SERVER['REQUEST_URI']) > 0)?" class='active'":""; ?>>
-								<a href="<?php echo $home . $links['people']; ?>">
+<?php
+                        if ( $auth['uid'] > 0 )
+                        {
+?>
+                        		<a href="<?php echo $home . $links['people']; ?>">
+<?php
+                        }
+                        else
+                        {
+?>
+                        		<a href="javascript: show_login_panel()">
+<?php
+                        }
+?>
 									<img class="img-header-logo" id="img-header-logo-personal" src="<?php echo $home . "theme/images/mobile/header/person.png"; ?>">
 									<img class="nycuni-navbar-nav-img" src="<?php echo $home."theme/images/header_span_people.png"; ?>">
 									<span class="nycuni-navbar-nav-span">个人</span>
@@ -132,7 +145,7 @@
 							</li>
 <?php } else { ?>
 							<li>
-								<a href="<?php echo $home; ?>">
+								<a href="javascript: show_login_panel()">
 									<img class="img-header-logo" id="img-header-logo-setting" src="<?php echo $home . "theme/images/mobile/header/setting.png"; ?>">
 									<img class="nycuni-navbar-nav-img" src="<?php echo $home."theme/images/header_span_login.png"; ?>">
 								</a>

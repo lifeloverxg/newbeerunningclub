@@ -2,7 +2,7 @@
         </section> 
 		<footer>
 			<div class="footer-content">
-				<div class="footer-copyright">Copyright © 2014 Zus Network, Inc.</div>
+				<div class="footer-copyright">Copyright © 2016 NewBee Running CLub.</div>
 				<!-- <ul class="footer-terms">
 					<li><a href="<?php echo $home . $links['privacy']; ?>">隐私说明</a></li>
 					<li><a href="<?php echo $home . $links['terms']; ?>">使用条款</a></li>

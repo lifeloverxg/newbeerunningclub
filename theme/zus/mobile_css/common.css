@@ -83,19 +83,21 @@
 .head-login_panel
 {
     display: block;
-    margin: 0px 0px 10px 1px;
+    margin: 10px auto;
+    width: 100%;
     float: left;
+    text-align: center;
 }
 
 .login-logo
 {
     display: block;
-    float: left;
 }
 
 .login-announce
 {
     display: block;
+    width: 100%;
     float: left;
     margin: 15px 0px 0px 10px;
     color: rgba(0, 118, 166, 1);

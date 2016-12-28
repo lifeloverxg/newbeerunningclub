@@ -1,7 +1,7 @@
 <?php
 	@define('IN_FCBS', TRUE);
 
-	if (!defined('IN_ZUS') && !defined('IN_FCBS')) {
+	if (!defined('IN_NBRC') && !defined('IN_FCBS')) {
 		exit('<h1>403:Forbidden @spec/fcbs_14_fest/handler:util.php</h1>');
 	}
 

@@ -453,6 +453,11 @@ body>header {
     /*max-height: 43px;*/
 }
 
+.mobile-navbar-collapse
+{
+    float:right;
+}
+
 #navbarInput-01
 {
     border-top-left-radius: 6px;
@@ -1933,20 +1938,23 @@ body>section
 .head-login_panel
 {
     display: block;
-    margin: 0px 0px 10px 1px;
+    margin: 10px auto;
     float: left;
+    width: 100%;
+    text-align: center;
 }
 
 .login-logo
 {
     display: block;
     float: left;
+    width: 100%;
 }
 
 .login-announce
 {
     display: block;
-    float: left;
+    /*float: left;*/
     margin: 10px 0px 0px 10px;
     color: rgba(0, 118, 166, 1);
 }
@@ -1964,7 +1972,8 @@ body>section
     border-radius: 0.5rem;
     /*line-height: 2rem;*/
     height: auto;
-    width: 15rem;
+    /*width: 15rem;*/
+    width:100%;
 }
 
 .article-login_panel .div-save-pass

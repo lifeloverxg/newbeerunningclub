@@ -7,7 +7,7 @@
 $bm = new Timer();
 
 	   
-	if(!defined('IN_ZUS')) {
+	if(!defined('IN_NBRC')) {
 		exit('<h1>503:Service Unavailable @information:browser</h1>');
 	}
 

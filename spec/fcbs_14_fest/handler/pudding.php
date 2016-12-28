@@ -3,7 +3,7 @@
 	include_once($home.'core.php');
 	include_once('util.php');
 	
-	if (!defined('IN_ZUS') && !defined('IN_FCBS')) {
+	if (!defined('IN_NBRC') && !defined('IN_FCBS')) {
 		exit('<h1>503:Service Unavailable @spec/fcbs_14_fest/handler:pudding</h1>');
 	}
 

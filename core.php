@@ -1,9 +1,9 @@
 <?php
 
-	@define('IN_ZUS', TRUE);
+	@define('IN_NBRC', TRUE);
 	session_start();
 	
-	if(!defined('IN_ZUS')) {
+	if(!defined('IN_NBRC')) {
 		exit('<h1>503:Service Unavailable @root:core</h1>');
 	}
 

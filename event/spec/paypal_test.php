@@ -4,7 +4,7 @@
 	include_once ($home.'core.php');
 $bm = new Timer();
 	
-	if(!defined('IN_ZUS')) {
+	if(!defined('IN_NBRC')) {
 		exit('<h1>503:Service Unavailable @event:browser</h1>');
 	}
 

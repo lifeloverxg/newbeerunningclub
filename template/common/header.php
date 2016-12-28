@@ -88,7 +88,7 @@
                     <span style="margin-top: 8px; text-transform: none;">纽约新蜂跑团</span>
                 </a>
 			</div>
-			<div class="collapse navbar-collapse" id="navbar-collapse-01">
+			<div class="collapse navbar-collapse <?php if ($deviceType == "phone") { echo "mobile-navbar-collapse"; }?>" id="navbar-collapse-01">
 				<ul class="nav navbar-nav nycuni-navbar-nav">
                     <li<?php echo (preg_match("/\/event/i", $_SERVER['REQUEST_URI']) > 0)?" class='active'":""; ?>>
                         <a href="<?php echo $home . $links['event']; ?>">
@@ -141,7 +141,7 @@
                 );
                 $search = SearchDAO::search_func();
 ?>		      
-				<form class="navbar-form nycuni-navbar-form navbar-right" action="<?php echo $home . "cgi/form_actions?eid=28"; ?>" role="search" onsubmit="header_search_chk()">
+				<!-- <form class="navbar-form nycuni-navbar-form navbar-right" action="<?php echo $home . "cgi/form_actions?eid=28"; ?>" role="search" onsubmit="header_search_chk()">
 					<div class="form-group">
 						<div class="input-group">
                             <input type="hidden" id="header-search-pid" value="<?php echo $auth['uid']; ?>">
@@ -151,13 +151,13 @@
 							</span>            
 						</div>
 					</div>	             
-				</form>
+				</form> -->
                 <ul class="nav navbar-nav navbar-right navbar-right-setting">
 <?php if (isset($_SESSION['auth'])) { ?>
                     <li class="dropdown dropdown-nycuni-show" id="dropdown-nycuni-show-id" style="float: right; min-height: 43px;">
                         <a href="<?php echo $home . $links['people']; ?>" class="dropdown-toggle" data-toggle="dropdown">
                             <img class="logo-medium" src="<?php echo $home.$auth['image']; ?>" alt="<?php echo $auth['alt']; ?>" title="<?php echo $auth['title']; ?>">
-                            <span class="dropdown-nycuni-show-welcome">欢迎回来，</span><span class="dropdown-nycuni-show-user"><?php echo $auth['title']; ?></span>
+                            <span class="dropdown-nycuni-show-welcome"></span>
                             <b class="caret uni-caret"></b>
                         </a>
                         <span class="dropdown-arrow"></span>
@@ -178,7 +178,7 @@
                         </a>
                     </li> -->
 <?php } else { ?>
-                    <span style="height: 43px; line-height: 43px;"> 
+                    <span style="height: 43px; line-height: 43px; font-weight: bold; text-align: center; display: block;"> 
                         <a href="javascript:" onclick="show_login_panel()">登录|注册</a>
                     </span>
 <?php } ?>

@@ -4,7 +4,7 @@
 
 $bm = new Timer();
 
-	if(!defined('IN_ZUS')) {
+	if(!defined('IN_NBRC')) {
 		exit('<h1>503:Service Unavailable @cgi:search_right_list</h1>');
 	}
 
