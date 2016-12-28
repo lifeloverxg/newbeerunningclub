@@ -12,8 +12,8 @@
 	// MySQL Settings
 	$_SCONFIG['mysql_host']         = '127.0.0.1';
 	$_SCONFIG['mysql_user']  		= 'root';
-	$_SCONFIG['mysql_pass'] 		= 'Gotorun2017!';
-	// $_SCONFIG['mysql_pass'] 		= 'mysql';
+	// $_SCONFIG['mysql_pass'] 		= 'Gotorun2017!';
+	$_SCONFIG['mysql_pass'] 		= 'mysql';
 	$_SCONFIG['mysql_charset'] 		= 'utf8';
 	$_SCONFIG['mysql_database']		= 'newbee';
 	

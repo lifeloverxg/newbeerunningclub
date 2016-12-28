@@ -1,7 +1,6 @@
 <div class="display-block-small">
 	<div class="display-block-title">
 		活动
-		<img src="<?php echo $home . "theme/images/logo_blue.png"; ?>">
 	</div>
 	<ul class="ul-event-list-small">
 <?php foreach ($event_list_small as $event) { ?>

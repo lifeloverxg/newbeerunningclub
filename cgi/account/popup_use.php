@@ -31,7 +31,7 @@
 
 		if ( $args['id'] == 'qr' )
 		{
-			$content = "打开微信, 点击底部的“发现”, 使用 “扫一扫” 加入nycuni官方微信群";
+			$content = "打开微信, 点击底部的“发现”, 使用 “扫一扫” 加入纽约新蜂跑团官方微信群";
 		}
 		
 		//Access database, determine whether the email exists or not

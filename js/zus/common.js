@@ -2052,7 +2052,7 @@ function show_qr(id, share_url, home)
 	{
 		if ( (share_url == "") || (id == 'qr') )
 		{
-			share_url = home+"theme/images/Nycuni_wechat.jpg";
+			share_url = home+"theme/images/NBRC_Wechat.jpg";
 		}
 		$.ajax({
 			url: '../cgi/account/popup_use.php',

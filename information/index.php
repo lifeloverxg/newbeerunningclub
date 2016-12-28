@@ -1,27 +1,3 @@
-<? // php
-
-// 	$home = '../';
-// 	include_once ($home.'core.php');
-// 	$deviceType = Mobile_Detect::deviceType();
-	
-// $bm = new Timer();
-	
-// 	if(!defined('IN_ZUS')) {
-// 		exit('<h1>503:Service Unavailable @information:browser</h1>');
-// 	}
-
-// // if ( $deviceType == 'phone' )
-// // {
-// // 	Unicorn::show($home, '正在开发中, 请耐心等待...');
-// // 	// include ($home.'template/information_new/browser.php');
-// // }
-// // else
-// // {
-// // 	include ($home.'template/information_new/browser.php');
-// // }
-
-// 	include ($home.'template/information_new/browser.php');
-?>
 <?php
 
 	$home = '../';

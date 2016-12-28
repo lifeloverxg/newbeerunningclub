@@ -72,12 +72,12 @@
 		
 		public static function get_const_array() {
 			return array(
-						 self::All  => '全部',
-						 self::a => '官方',
-						 self::b => '科技',
-						 self::c => '人文',
-						 self::d => '生活',
-						 self::e => '娱乐',
+						 self::All  => '新蜂',
+						 self::a => '分舵',
+						 self::b => '個人',
+						 self::c => '興趣',
+						 self::d => 'BQ分組',
+						 self::e => '新手群',
 						 self::f => '其他'
 						 );
 		}
