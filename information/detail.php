@@ -5,101 +5,59 @@
 	
 $bm = new Timer();
 	
-	if(!defined('IN_NBRC')) {
-		exit('<h1>503:Service Unavailable @information:detail</h1>');
-	}
-
-	if (isset($_GET['arid'])) {
-		$arid = $_GET['arid'];
-	}
-	else {
-		header('Location: browser.php');
+	if(!defined('IN_NBRC'))
+	{
+		exit('<h1>503:Service Unavailable @event:detail</h1>');
 	}
 
 	$auth = Authority::get_auth_arr();
 
-	$article_detail = ArticleDAO::get_article_detail_arid($arid);
-	$expression_list = Expression::get_expression_list();
-	$exp_path = Expression::get_path();
+	$newrun = array();
+	$curdays = -1;
 
-	$title = $article_detail['title'] . ' - 文章内容 - NBRC - 纽约新蜂跑团';
+	if (isset($_GET['rcid']) && $_GET['rcid'] != '' )
+	{
+		$rcid = $_GET['rcid'];
+		$newrun = RunDAO::get_running_rcid($rcid);
+		$curdays = RunDAO::getcurmonthdays($newrun['owner']);
+	}
+
+	$deviceType = Mobile_Detect::deviceType();
+
 	$stylesheet = array(
-						"theme/zus/information_css/article_detail_page.css",
-						"theme/zus/search.css",
-						"theme/zus/group_css/post_article.css",
-						"theme/zus/group_css/group_feed_list.css"
+						// 'theme/zus/event_css/payment.css',
+						'theme/zus/album_photo.css',
+						'theme/zus/event_create_new.css',
+						// 'theme/zus/jquery.datetimepicker.css',
+						// 'theme/bootstrap/bootstrap-timepicker.min.css',
+						'theme/zus/search.css',
+						'theme/zus/search_css/filter.css',
 						);
+	
+	$m_stylesheet = array(			
+							);
+
 	$javascript = array(
-						"js/zus/article/article.js"
+						'js/zus/comment.js',
+						'js/zus/account/c_s_c.js',
+						'js/zus/account/DateFormat.js',
+						// 'js/zus/jquery.datetimepicker.js'
+						// 'js/bootstrap/bootstrap-timepicker.js',
 						);
+	
+	$m_javascript = array();
+	
 	$links = $_SGLOBAL['links'];
-$bm->mark();
+
+	$rundata = RunDAO::get_sorted_rank_list();
+
+	$rundata_dis = RunDAO::get_sorted_rank_list(0, 1);
+
+	$manage_tabs = RunDAO::get_run_nav_tab_list($auth['uid']);
+
+	$curMorningruneid = RunDAO::get_curMorningrun_eid();
 	
-	$tpid = $article_detail['author_id'];
-	$large_logo = PeopleDAO::get_people_logo($auth['uid'], $tpid);
-	$info_list = PeopleDAO::get_info_list($auth['uid'], $tpid);
-	// $info_list['title'] = '作者信息';
+	include S_ROOT . "template/newrun/run_frame.php";
 
-	$target_article_list = ArticleDAO::get_my_article_pid($tpid);
-
-	$search = array(
-					'catalog' => 0,
-					'keyword' => '',
-					'func' => array(
-									'assist' => '',
-									'search' => ''
-									)
-					);
-	
-	if (isset($_GET['catalog'])) {
-		$search['catalog'] = $_GET['catalog'];
-	}
-	if (isset($_GET['keyword'])) {
-		$search['keyword'] = $_GET['keyword'];
-	}
-
-$bm->mark();
-
-	if (PeopleDAO::get_people_privacy_pid($auth['uid']) != Privacy::NonExist) {
-		$button_list_large = array(
-								   array(
-										 'title' => '发表文章',
-										 'class' => 'article',
-										 'action' => 'post_article(' . $auth['uid'] . ')',
-										 )
-								   );
-	}
-	else
-	{
-		$button_list_large = array();
-	}
-	
-	$article_catalog_list = ArticleCategory::get_const_array();
-	$article_privacy_list = Privacy::get_const_array(); 
-
-	if ( isset($_POST["article_submit"]) && ($_POST["article_submit"]!="") )
-	{
-		if($auth['uid'] > 0) {
-			$article = array(
-							'title' => $_POST["article_title"],
-							'category' => $_POST["article_category"],
-							'tag' => $_POST["article_tag"],
-							'privacy' => $_POST["article_privacy"],
-							'content' => $_POST["article_content"]
-						);
-
-			$bid = ArticleDAO::post_article_people($auth['uid'], $article);
-
-			if ( !empty($bid) )
-			{
-				header('Location: '.$home.'information/detail.php?arid='.$bid);
-			}
-		}
-		else {
-			header('Location: ' . $home);
-		}
-	}
-	
-	include S_ROOT."template/information/detail_frame.php";
 $bm->mark();
 echo '<!-- '.$bm->report().'-->';

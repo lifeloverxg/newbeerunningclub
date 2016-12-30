@@ -140,7 +140,7 @@
         var iscreate = $("#fui-fileinput-imageUpload-iscreate").val()
         if ( iscreate == 1 )
         {
-          var html = "<img src='"+home+"theme/images/default_upload_logo.jpg' style='width: 150px; height: 100px;'/>"
+          var html = "<img src='"+home+"theme/images/default_upload_logo.jpg' style='width: 140px; height: 120px;'/>"
         }
         else
         {

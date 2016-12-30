@@ -324,6 +324,41 @@ function refreshPage(obj)
 	}
 }
 
+function get_superior_member(pid)
+{
+	superior_member = new Array();
+	if ( pid > 0 )
+	{
+		pid = 2;
+		superior_member[0] = pid;
+
+		pid = 99;
+		superior_member[1] = pid;
+
+		pid = 244;
+		superior_member[2] = pid;
+
+		pid = 1529;
+		superior_member[3] = pid;
+	}
+	
+	return superior_member;
+}
+
+function define_superior_member(pid)
+{
+	superior_member = get_superior_member(pid);
+	for ( var i = 0; i < superior_member.length; i++ )
+	{
+		if ( pid == superior_member[i] )
+		{
+			return true;
+		}
+	}
+
+	return false;
+}
+
 //Library functions
 function serverError(obj){
 	alert("Server Error!");
@@ -358,41 +393,6 @@ function action(actionName, success, error, type, formData){
 			serverError(obj);
 		}
 	});
-}
-
-function get_superior_member(pid)
-{
-	superior_member = new Array();
-	if ( pid > 0 )
-	{
-		pid = 2;
-		superior_member[0] = pid;
-
-		pid = 99;
-		superior_member[1] = pid;
-
-		pid = 244;
-		superior_member[2] = pid;
-
-		pid = 1529;
-		superior_member[3] = pid;
-	}
-	
-	return superior_member;
-}
-
-function define_superior_member(pid)
-{
-	superior_member = get_superior_member(pid);
-	for ( var i = 0; i < superior_member.length; i++ )
-	{
-		if ( pid == superior_member[i] )
-		{
-			return true;
-		}
-	}
-
-	return false;
 }
 
 /*============================== <common function> ============================== */
@@ -1665,6 +1665,11 @@ function photo_upload_btn()
 {
 	document.getElementById("photo-upload-submit").click();
 	// window.location.href = window.location.href;
+}
+
+function create_runningcard_btn()
+{
+	document.getElementById("runcard-create-submit").click();
 }
 
 function Trans_php_time_to_str(timestamp,n)
@@ -3082,9 +3087,89 @@ function Check_FileType(str)
 
 /*==================== #4 uploadLogoForm Check ====================*/
 
+/*++++++++++++++++++++ #5 runningcardForm check ++++++++++++++++++++*/
+function run_card_check(eventCreateForm)
+{
+	/*++++++++++ first of all check uid ++++++++++*/
+	var pid = $("#nbrcpid").val();
+	if ( pid <= 0 || pid == null )
+	{
+		//alert("请先登陆");
+		show_login_panel();
+		return false;
+	}
+	/*========== first of all check uid ==========*/
+	var html = "<p>hello</p>";
+
+	var url_hash = window.location.hash;
+	if ( url_hash != '' )
+	{
+		window.location.hash = "";
+	}
+
+	for ( var i = 0; i < 10; i++ )
+	{
+		$("#ul-errorlist-"+i).html("");
+	}
+
+	/*+++++ check card distance +++++*/
+	var distance = $("input[name='card_distance']").val();
+	if ( (typeof(distance) == "undefined") || (distance == '') )
+	{
+		html = "<li>您必须输入奔跑距离.</li>";
+		$("#ul-errorlist-1").html(html);
+		$("input[name='card_distance']").focus();
+		return false;
+	}
+	else if ( isNaN(distance) )
+	{
+		html = "<li>请输入数字.</li>";
+		$("#ul-errorlist-1").html(html);
+		$("input[name='card_distance']").focus();
+		return false;
+	}
+	/*===== check card distance =====*/
+
+	/*+++++ check card image +++++*/
+	var logo_file_value = $("#logo-file-id").val();
+
+	if ( !(typeof(logo_file_value) == "undefined") && (logo_file_value != '') )
+	{
+		if ( !Check_FileType(logo_file_value) )
+		{
+			show_form_error("uploadLogoForm", "uploadPhotoTypeError");
+			return false;
+		}
+	}
+	// else
+	// {
+	// 	html = "<li>请上传活动海报</li>";
+	// 	$("#ul-errorlist-4").html(html);
+	// 	document.getElementById("trigger-go-set-sale-href-id-1").click();
+	// 	return false;
+	// }
+	/*===== check card image =====*/
+
+	/*+++++ check card description +++++*/
+	var description = $("textarea[name='runningcard_description']").val();
+	if ( (typeof(description) == "undefined") || (description == '') )
+	{
+		html = "<li>请添加活动描述.</li>";
+		$("#ul-errorlist-5").html(html);
+		$("textarea[name='runningcard_description']").focus();
+		return false;
+	}
+	/*===== check card description =====*/
+
+
+	return true;
+}
+/*==================== #4 uploadLogoForm Check ====================*/
+
 /*
 To Do...
 */
+
 /*========================================表单提交的检查========================================*/
 
 
