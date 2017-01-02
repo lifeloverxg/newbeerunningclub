@@ -1,7 +1,8 @@
 <?php if ( !empty($newrun) ) { ?>
-	<div class="alert alert-error">
+	<div class="alert alert-error" style = "text-align: center;">
             <button type="button" class="close fui-cross" data-dismiss="alert"></button>
-            	Your latest Run is <a href="" onclick = "">already uploaded</a>. You ran <?php echo $newrun['distance']; ?> km; This is your Day <?php echo $curdays; ?>
+            	Your latest Run was <a href="" onclick = "">already uploaded</a>. You ran <?php echo $newrun['distance']; ?> km; This is your Day <?php echo $curdays; ?><br>
+          		<img src="<?php echo $home. $newrun['image']; ?>" style="width: 100%; height: auto;"/>
           </div>
 <?php } ?>
 

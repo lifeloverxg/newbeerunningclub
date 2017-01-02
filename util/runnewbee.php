@@ -44,7 +44,7 @@
 
 		public static function get_curMorningrun_eid()
 		{
-			return 2;
+			return 155;
 		}
 
 		public static function get_rcid_list_people($mode = 0, $pid = 0, $limit = 5)
@@ -72,6 +72,10 @@
 			$running_cards = array();
 			$mysqli = MysqlInterface::get_connection();
 			$stmt = $mysqli->stmt_init();
+			// * 上月数据: 
+			//$stmt->prepare('SELECT rcid, pid, privacy FROM people2running WHERE privacy <'. Privacy::NonExist .' AND date_format(rctime, "%Y%m") = date_format(DATE_SUB(curdate(), INTERVAL 1 MONTH), "%Y%m") ORDER BY rctime DESC LIMIT 1000;');
+			
+			// * 当月数据
 			$stmt->prepare('SELECT rcid, pid, privacy FROM people2running WHERE privacy <'. Privacy::NonExist .' AND date_format(rctime, "%Y%m") = date_format(curdate(), "%Y%m") ORDER BY rctime DESC LIMIT 1000;');
 			//$stmt->bind_param('ii', $pid, $role);
 			$stmt->execute();
@@ -101,7 +105,7 @@
 				$card['owner'] = $row['owner'];
 				$card['distance'] = $row['distance'];
 				$card['day'] = date('d', strtotime($row[rctime]));
-				$card['image'] = $row['image'];
+				$card['image'] = $row['image']."_large.jpg";
 				$running_cards = $card;
 			}
 			$stmt->close();
@@ -208,29 +212,51 @@
 		{
 			$unsorted_list = self::get_rank_list($mode);
 			
-			$keyvalue = $sorted_rundata = array();
-			foreach ($unsorted_list as $key => $value)
+			$len = count($unsorted_list);
+
+			for ( $i = 0; $i < $len - 1; $i++ )
 			{
-				if ( $sortfunc == 0 )
+				$tmpkey = $i;
+				for ( $j = $i + 1; $j < $len; $j++ )
 				{
-					$keyvalue[$key] = $value['days'];
+					if ( $sortfunc == 0 )
+					{
+						if ( $unsorted_list[$j]['days'] > $unsorted_list[$tmpkey]['days'] )
+						{
+							$tmpkey = $j;
+						}
+						else if ( $unsorted_list[$j]['days'] == $unsorted_list[$tmpkey]['days'] )
+						{
+							if ( $unsorted_list[$j]['distance'] > $unsorted_list[$tmpkey]['distance'] )
+							{
+								$tmpkey = $j;
+							}
+						}
+					}
+					else if ( $sortfunc == 1 )
+					{
+						if ( $unsorted_list[$j]['distance'] > $unsorted_list[$tmpkey]['distance'] )
+						{
+							$tmpkey = $j;
+						}
+						else if ( $unsorted_list[$j]['distance'] == $unsorted_list[$tmpkey]['distance'] )
+						{
+							if ( $unsorted_list[$j]['days'] > $unsorted_list[$tmpkey]['days'] )
+							{
+								$tmpkey = $j;
+							}
+						}
+					}
 				}
-				else if ( $sortfunc == 1 )
+				if ( $tmpkey != $i )
 				{
-					$keyvalue[$key] = $value['distance'];
+					$tmp = $unsorted_list[$tmpkey];
+					$unsorted_list[$tmpkey] = $unsorted_list[$i];
+					$unsorted_list[$i] = $tmp;
 				}
 			}
 
-			arsort($keyvalue);
-
-			foreach($keyvalue as $k => $v)
-			{
-				//$sorted_rundata[$k] = $unsorted_list[$k];
-				array_push($sorted_rundata, $unsorted_list[$k]);
-			}
-
-			return $sorted_rundata;
-			
+			return $unsorted_list;
 		}
 
 		/* = (1) Calculate = */

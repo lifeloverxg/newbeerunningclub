@@ -101,22 +101,22 @@
 
 			//save large image
 			$img = new MyImageCrop($home.$tempName, $home . $file . $fn . '_large.jpg');
-			$img->Crop(300,200,1);
-			// $img->SaveAlpha();
-			$img->SaveImage();
+			$img->Crop(320,568,4);
+			$img->SaveAlpha();
+			// $img->SaveImage();
 			$img->destory();
 
 			//save middle image
-			$img = new MyImageCrop($home.$tempName, $home . $file . $fn . '_middle.jpg');
-			$img->Crop(150,100,3);
-			$img->SaveAlpha();
-			$img->destory();
+			// $img = new MyImageCrop($home.$tempName, $home . $file . $fn . '_middle.jpg');
+			// $img->Crop(150,100,3);
+			// $img->SaveAlpha();
+			// $img->destory();
 
 			//save small image
-			$img = new MyImageCrop($home.$tempName, $home . $file . $fn . '_small.jpg');
-			$img->Crop(50,50,1);
-			$img->SaveImage();
-			$img->destory();
+			// $img = new MyImageCrop($home.$tempName, $home . $file . $fn . '_small.jpg');
+			// $img->Crop(50,50,1);
+			// $img->SaveImage();
+			// $img->destory();
 
 			RunDAO::set_runcard_image_rcid($rcid, $file . $fn);
 			/*===== event logo =====*/
