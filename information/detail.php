@@ -28,6 +28,7 @@ $bm = new Timer();
 						// 'theme/zus/event_css/payment.css',
 						'theme/zus/album_photo.css',
 						'theme/zus/event_create_new.css',
+						'theme/zus/newrun.css',
 						// 'theme/zus/jquery.datetimepicker.css',
 						// 'theme/bootstrap/bootstrap-timepicker.min.css',
 						'theme/zus/search.css',

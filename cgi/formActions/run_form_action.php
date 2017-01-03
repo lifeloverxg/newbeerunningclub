@@ -39,10 +39,19 @@
 			$runningcard_description = '';
 		}
 
+		if ( isset($_POST['cardunit']) && $_POST['cardunit'] == 0 )
+		{
+			$card_distance = $_POST['card_distance'] * 1.60934;
+		}
+		else
+		{
+			$card_distance = $_POST['card_distance'];
+		}
+
 		$runningcard = array(
 					   'owner' => $_POST["nbrcpid"],
 					   'eowner' => $curMoreid,
-					   'distance' => $_POST["card_distance"],
+					   'distance' => $card_distance,
 					   'description' => $runningcard_description
 						);
 

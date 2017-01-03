@@ -1,7 +1,7 @@
 <?php if ( !empty($newrun) ) { ?>
 	<div class="alert alert-error" style = "text-align: center;">
             <button type="button" class="close fui-cross" data-dismiss="alert"></button>
-            	Your latest Run was <a href="" onclick = "">already uploaded</a>. You ran <?php echo $newrun['distance']; ?> km; This is your Day <?php echo $curdays; ?><br>
+            	Your latest Run was <a href="" onclick = "">already uploaded</a>. You ran <?php echo number_format($newrun['distance'],2); ?> km; This is your Day <?php echo $curdays; ?><br>
           		<img src="<?php echo $home. $newrun['image']; ?>" style="width: 100%; height: auto;"/>
           </div>
 <?php } ?>
@@ -34,7 +34,7 @@
 							<th>Rank</th>
 							<th>Name</th>
 							<th>Days</th>
-							<th>Distance</th>
+							<th>Distance(km)</th>
 							<th>Finished</th>
 						</tr>
 <?php
@@ -42,8 +42,17 @@
 			{
 		?>
 						<tr>
-							<td><?php echo $key + 1; ?> </td>
-							<td><?php echo $runvalue['ownerinfo']['title']; ?></td>
+							<td>
+								<?php echo $key + 1; ?>
+								<a href="<?php echo $home.$runvalue['ownerinfo']['url']; ?>">
+									<img src="<?php echo $home.$runvalue['ownerinfo']['image']; ?>"/>
+								</a>
+							</td>
+							<td>
+								<a class= "link-runner-title" href="<?php echo $home.$runvalue['ownerinfo']['url']; ?>">
+									<?php echo $runvalue['ownerinfo']['title']; ?>
+								</a>
+							</td>
 							<td><?php echo $runvalue['days']; ?></td>
 							<td><?php echo number_format($runvalue['distance'],2); ?></td>
 							<td><span class="fui-<?php if ($runvalue['days'] >= 12) echo "check"; else echo "cross"; ?>-inverted text-primary"></span></td>
@@ -67,7 +76,7 @@
 						<tr>
 							<th>Rank</th>
 							<th>Name</th>
-							<th>Distance</th>
+							<th>Distance(km)</th>
 							<th>Days</th>
 							<th>Finished</th>
 						</tr>
@@ -76,8 +85,17 @@
 			{
 		?>
 						<tr>
-							<td><?php echo $key + 1; ?> </td>
-							<td><?php echo $runvalue['ownerinfo']['title']; ?></td>
+							<td>
+								<?php echo $key + 1; ?>
+								<a href="<?php echo $home.$runvalue['ownerinfo']['url']; ?>">
+									<img src="<?php echo $home.$runvalue['ownerinfo']['image']; ?>"/>
+								</a>
+							</td>
+							<td>
+								<a class= "link-runner-title" href="<?php echo $home.$runvalue['ownerinfo']['url']; ?>">
+									<?php echo $runvalue['ownerinfo']['title']; ?>
+								</a>
+							</td>
 							<td><?php echo number_format($runvalue['distance'],2); ?></td>
 							<td><?php echo $runvalue['days']; ?></td>
 							<td><span class="fui-<?php if ($runvalue['days'] >= 12) echo "check"; else echo "cross"; ?>-inverted text-primary"></span></td>
@@ -137,13 +155,43 @@
 						<div id="run-card-title">
 							<div class="g-cell">
 								<label class="responsive-form__label--primary">
-									奔跑距离<默认km>
+									奔跑距离<默认mile, 右侧修改unit>
 									<span class="required">*</span>
 								</label>
 							</div>
 							<div class="g-cell">
-								<input type="text" name="card_distance" class="form-control input-sm type-input" placeholder=".....km"/>
-								<div class="inputtext errors">
+								<input type="text" name="card_distance" class="form-control input-sm type-input run-input" style="text-align:right;" placeholder="....."/>
+							<div class="unit-wrapper">
+								<div id = "unit-switch" class="switch has-switch">
+										 <div id = "switch-unit-in" class="switch-off switch-animate">
+										 <span class="switch-left">km</span>
+										 <label for="card-unit">&nbsp;</label>
+										 <span class="switch-right">mile</span>
+										 </div>
+									 </div>
+								 </div>
+
+								 <input type="hidden" name="cardunit" id="cardunit" value="0"/>
+
+								 <script type = "text/javascript">
+								  $("#unit-switch").click(function(){
+									$("#switch-unit-in").removeAttr("style");
+								    if ( $("#switch-unit-in").hasClass("switch-on") )
+								    {
+								      $("#switch-unit-in").removeClass("switch-on").addClass("switch-off");
+								      $("#switch-unit-in").addClass("switch-animate");
+								      $("input[name='cardunit']").val(0);
+								    }
+								    else
+								    {
+								       $("#switch-unit-in").removeClass("switch-off").addClass("switch-on");
+								       $("#switch-unit-in").addClass("switch-animate");
+								       $("input[name='cardunit']").val(1);
+								    }
+								    $("#switch-unit-in").removeAttr("style");
+								  });
+								  </script>
+								<div class="carderror inputtext errors">
 									<div class="event-create-errors">
 										<ul class="errorlist" id="ul-errorlist-1"></ul>
 									</div>

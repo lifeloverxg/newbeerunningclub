@@ -3088,7 +3088,7 @@ function Check_FileType(str)
 /*==================== #4 uploadLogoForm Check ====================*/
 
 /*++++++++++++++++++++ #5 runningcardForm check ++++++++++++++++++++*/
-function run_card_check(eventCreateForm)
+function run_card_check(cardCreateForm)
 {
 	/*++++++++++ first of all check uid ++++++++++*/
 	var pid = $("#nbrcpid").val();

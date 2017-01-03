@@ -1,0 +1,34 @@
+/*++++++++++ for running card ++++++++++*/
+.run-input
+{
+	width: 70%;
+	display: block;
+	float: left;
+}
+
+.unit-wrapper
+{
+	display: block;
+	float: left;
+	width: 30%;
+	padding: 5px;
+}
+
+td
+{
+	height: 50px !important;
+	line-height: 50px !important;
+}
+
+.link-runner-title
+{
+	color: black !important;
+}
+
+/*.has-switch
+{
+	display: block;
+	float: left;
+	width: 100px;
+}*/
+/*========== for running card ==========*/
