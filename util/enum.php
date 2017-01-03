@@ -159,13 +159,14 @@
 	class DefaultImage {
 		const __default = '';
 		
-		const People = 'theme/images/default/default_people';
-		const Event  = 'theme/images/default/default_group';
-		const Group  = 'theme/images/default/default_group';
-		const Photo  = 'theme/images/default/default_photo_original';
-		const QR     = 'theme/images/default/default_qr.png';
-		const ErrPg  = 'theme/images/default/default_photo_new.png';
-		const Icon   = 'theme/images/default/default_photo_new.png';
+		const Runcard 	= 'theme/images/default/default_runningcard';
+		const People 	= 'theme/images/default/default_people';
+		const Event  	= 'theme/images/default/default_group';
+		const Group  	= 'theme/images/default/default_group';
+		const Photo  	= 'theme/images/default/default_photo_original';
+		const QR     	= 'theme/images/default/default_qr.png';
+		const ErrPg  	= 'theme/images/default/default_photo_new.png';
+		const Icon   	= 'theme/images/default/default_photo_new.png';
 	}
 	
 	class RepeatTimeSpan {

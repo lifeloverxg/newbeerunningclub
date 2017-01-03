@@ -43,7 +43,6 @@
 		<script src="<?php echo $home . "js/zus/comment.js"; ?>"></script>
 		<script src="<?php echo $home . "js/analytics/google_analytics.js"; ?>"></script>
 		<script src="<?php echo $home . "js/zus/account/panel_sign.js"; ?>"></script>
-        <script src="<?php echo $home ."template/information_new/test.js"; ?>"></script>
 <?php foreach ($javascript as $value) { ?>
 		<script src="<?php echo $home . $value; ?>"></script>
 <?php } ?>

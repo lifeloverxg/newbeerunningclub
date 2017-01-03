@@ -8,5 +8,4 @@
 
 	
 	header('Location: detail.php');
-
 ?>

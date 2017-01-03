@@ -105,7 +105,12 @@
 				$card['owner'] = $row['owner'];
 				$card['distance'] = $row['distance'];
 				$card['day'] = date('d', strtotime($row[rctime]));
-				$card['image'] = $row['image']."_large.jpg";
+				if (!empty($row['image'])) {
+					$card['image'] = $row['image'].'_large.jpg';
+				}
+				else {
+					$card['image'] = DefaultImage::Runcard.'.jpg';
+				}
 				$running_cards = $card;
 			}
 			$stmt->close();

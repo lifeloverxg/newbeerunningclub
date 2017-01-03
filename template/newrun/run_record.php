@@ -45,7 +45,7 @@
 							<td><?php echo $key + 1; ?> </td>
 							<td><?php echo $runvalue['ownerinfo']['title']; ?></td>
 							<td><?php echo $runvalue['days']; ?></td>
-							<td><?php echo $runvalue['distance']; ?></td>
+							<td><?php echo number_format($runvalue['distance'],2); ?></td>
 							<td><span class="fui-<?php if ($runvalue['days'] >= 12) echo "check"; else echo "cross"; ?>-inverted text-primary"></span></td>
 						</tr>
 <?php
@@ -78,7 +78,7 @@
 						<tr>
 							<td><?php echo $key + 1; ?> </td>
 							<td><?php echo $runvalue['ownerinfo']['title']; ?></td>
-							<td><?php echo $runvalue['distance']; ?></td>
+							<td><?php echo number_format($runvalue['distance'],2); ?></td>
 							<td><?php echo $runvalue['days']; ?></td>
 							<td><span class="fui-<?php if ($runvalue['days'] >= 12) echo "check"; else echo "cross"; ?>-inverted text-primary"></span></td>
 						</tr>
