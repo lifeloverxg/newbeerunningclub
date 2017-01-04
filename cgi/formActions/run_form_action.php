@@ -39,6 +39,8 @@
 			$runningcard_description = '';
 		}
 
+		$card_distance = 0;
+
 		if ( isset($_POST['cardunit']) && $_POST['cardunit'] == 0 )
 		{
 			$card_distance = $_POST['card_distance'] * 1.60934;
@@ -59,7 +61,6 @@
 		$rcid = RunDAO::create_runcard($pid, $runningcard);
 
 		//$stmt->prepare('UPDATE event SET title=?, start_time=?, end_time=?, location=?, description=?, category=?, size=?, tag=?, price=?, privacy=? WHERE eid=?;');
-
 		if ( $rcid > 0 && $_FILES["file"]["name"] != '' )	
 		{
 			/*+++++ event logo +++++*/
