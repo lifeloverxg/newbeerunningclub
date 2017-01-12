@@ -44,7 +44,17 @@ function findpassword()
 					// }
 					// $("#sub_btn").removeAttr("disabled").val('已提交').css("cursor","pointer");
 					// ============ 之前的 ==================
-					window.location.href = "../account/resetpwd.php?code="+obj.args.urlcode;
+					if (obj.args.param)
+					{
+						window.location.href = "../account/resetpwd.php?code="+obj.args.urlcode;
+					}
+					else
+					{
+						$("#chkmsg").html(obj.args.list);
+						$("#sub_btn").removeAttr("disabled").val('再次提交').css("cursor", "pointer");
+						$("#email").val("");
+					}
+					$("#sub_btn").removeAttr("disabled").val('已提交').css("cursor","pointer");
 				}	
 			},
 			error: function(data)
