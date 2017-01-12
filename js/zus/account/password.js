@@ -31,18 +31,20 @@ function findpassword()
 				console.log(obj.args);	
 				if (obj.error == "none")
 				{
-					$("#chkmsg").html(obj.args.list);
-					if (obj.args.param)
-					{
-						$("#sub_btn").attr("disabled","disabled").val('已提交').css("cursor","default");
-					}
-					else
-					{
-						$("#sub_btn").removeAttr("disabled").val('再次提交').css("cursor", "pointer");
-						$("#email").val("");
-					}
+					//++++++++++++++ 之前的 +++++++++++++++
+					// $("#chkmsg").html(obj.args.list);
+					// if (obj.args.param)
+					// {
+					// 	$("#sub_btn").attr("disabled","disabled").val('已提交').css("cursor","default");
+					// }
+					// else
+					// {
+					// 	$("#sub_btn").removeAttr("disabled").val('再次提交').css("cursor", "pointer");
+					// 	$("#email").val("");
+					// }
 					// $("#sub_btn").removeAttr("disabled").val('已提交').css("cursor","pointer");
-					
+					// ============ 之前的 ==================
+					window.location.href = "../account/resetpwd.php?code="+obj.args.urlcode;
 				}	
 			},
 			error: function(data)

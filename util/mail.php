@@ -197,7 +197,8 @@ class MailDAO
         {
             $uid = $row['uid'];
             $token = base64_encode($uid."|".$user."|".$email);
-            $url = "http://nycuni.com/account?code=".$token;
+            // $url = "http://nycuni.com/account?code=".$token;
+            $url = $token;
             $stmt->close();
             return $url;
         }

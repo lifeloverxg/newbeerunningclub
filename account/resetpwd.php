@@ -32,6 +32,8 @@ $bm = new Timer();
 	$user_info_array = explode("|", $user_info);
 
 	$user_email = $user_info_array[2];
+
+	// var_dump($user_email);
 $bm->mark();
 	
 //	var_dump($links);

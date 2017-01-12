@@ -12,6 +12,7 @@
 	$args = array(
 				  'email' => '',
 				  'list' => '',
+				  'urlcode' => '',
 				  'param' => false,
 				  );
 
@@ -40,20 +41,25 @@
 		}
 		else
 		{
-			$subject = "找回密码 - NBRC - 纽约新蜂跑团";
-			$email_result = MailDAO::sendmail($args['email'], $subject, $url);
+			$args['urlcode'] = $url;
+			// ++++++++++++++ 之前的 +++++++++++++++
+			// $subject = "找回密码 - NBRC - 纽约新蜂跑团";
+			// $email_result = MailDAO::sendmail($args['email'], $subject, $url);
 			
-			if ($email_result == "yi")
-			{
-				$args['list'] = "您的修改密码链接已经发到您的邮箱<br>请登录您的邮箱进行重置密码";
-				$args['param'] = true;
-			}
-			else
-			{
-				$args['list'] = "发送邮件失败";
-			}
+			// if ($email_result == "yi")
+			// {
+			// 	$args['list'] = "您的修改密码链接已经发到您的邮箱<br>请登录您的邮箱进行重置密码";
+			// 	$args['param'] = true;
+			// }
+			// else
+			// {
+			// 	$args['list'] = "发送邮件失败";
+			// }
+			// ============ 之前的 ==================
+			// ++ 先统一改成暴力修改 ++
+			$args['list'] = "您的修改密码链接已经发到您的邮箱<br>请登录您的邮箱进行重置密码";
+			$args['param'] = true;
 		}
-
 	}
 	
 	//return json-type test

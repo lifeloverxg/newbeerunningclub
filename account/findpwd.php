@@ -21,7 +21,7 @@ $bm = new Timer();
 							"js/zus/account/password.js"
 						);
 	$m_javascript = array(
-							"js/zus/account/password.js",
+							//"js/zus/account/password.js",
 							);
 	$links = $_SGLOBAL['links'];
 
@@ -29,23 +29,14 @@ $bm = new Timer();
 
 	$deviceType = Mobile_Detect::deviceType();
 
+	//$resetcode = "test12345";
+
 $bm->mark();
 	
 //	var_dump($links);
 	
 $bm->mark();
-	if ( ($deviceType == "phone") ) 
-	{
-		include S_ROOT."template/mobile/account/findpwd/m_findpwd_frame.php";
-	}
-	else if ( ($_SCONFIG['version'] == 'debug_tablet') || ($deviceType == "tablet") )
-	{
-		include S_ROOT."template/account/findpwd/findpwd_frame.php";
-	}
-	else 
-	{
-		include S_ROOT."template/account/findpwd/findpwd_frame.php";
-	}
+	include S_ROOT."template/account/findpwd/findpwd_frame.php";
 $bm->mark();
 echo '<!-- '.$bm->report().'-->';
 

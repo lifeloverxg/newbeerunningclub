@@ -73,7 +73,7 @@
 				$full = '';
 			}
 
-			$html = spec_popup::popup_render_large_photo($args['id'], 'nycuni - 查看大图', $full);
+			$html = spec_popup::popup_render_large_photo($args['id'], 'NBRC - 查看大图', $full);
 			$args['list'] = $html;
 		}
 	}
@@ -113,7 +113,7 @@
 					break;
 			}
 
-			$html = spec_popup::popup_render_error($args['id'], 'nycuni - error', $notification);
+			$html = spec_popup::popup_render_error($args['id'], 'NBRC - error', $notification);
 			$args['list'] = $html;
 		}
 	}

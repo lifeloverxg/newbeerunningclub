@@ -1,6 +1,6 @@
 <?php
 // HTML header
-include $home . "template/common/header_noInformation.php";
+include $home . "template/common/header.php";
 
 if ( isset($resetcode) && ($resetcode != "") )
 {
@@ -23,5 +23,5 @@ else
 }
 
 // HTML footer
-include $home . "template/common/footer_noInformation.php"; 
+include $home . "template/common/footer.php"; 
 ?>
