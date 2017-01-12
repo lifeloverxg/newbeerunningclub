@@ -54,7 +54,7 @@ function findpassword()
 						$("#sub_btn").removeAttr("disabled").val('再次提交').css("cursor", "pointer");
 						$("#email").val("");
 					}
-					$("#sub_btn").removeAttr("disabled").val('已提交').css("cursor","pointer");
+					// $("#sub_btn").removeAttr("disabled").val('已提交').css("cursor","pointer");
 				}	
 			},
 			error: function(data)
