@@ -44,7 +44,8 @@
 
 		public static function get_curMorningrun_eid()
 		{
-			return 155;
+			//return 155;	// January
+			return 162;	// Febuary
 		}
 
 		public static function get_rcid_list_people($mode = 0, $pid = 0, $limit = 5)
@@ -262,6 +263,21 @@
 			}
 
 			return $unsorted_list;
+		}
+
+		public static function get_raunTotal_list()
+		{
+			$rundata = RunDAO::get_sorted_rank_list();
+			$runTotal = array();
+			$runTotal['days'] = 0;
+			$runTotal['distance'] = 0.0;
+			foreach ( $rundata as $key => $runvalue )
+			{
+				$runTotal['days'] = $runTotal['days'] + $runvalue['days'];
+				$runTotal['distance'] = $runTotal['distance'] + $runvalue['distance'];
+			}
+
+			return $runTotal;
 		}
 
 		/* = (1) Calculate = */

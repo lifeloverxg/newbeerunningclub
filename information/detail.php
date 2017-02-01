@@ -57,6 +57,8 @@ $bm = new Timer();
 	$manage_tabs = RunDAO::get_run_nav_tab_list($auth['uid']);
 
 	$curMorningruneid = RunDAO::get_curMorningrun_eid();
+
+	$runtotal = RunDAO::get_raunTotal_list();
 	
 	include S_ROOT . "template/newrun/run_frame.php";
 

@@ -55,11 +55,23 @@
 							</td>
 							<td><?php echo $runvalue['days']; ?></td>
 							<td><?php echo number_format($runvalue['distance'],2); ?></td>
-							<td><span class="fui-<?php if ($runvalue['days'] >= 12) echo "check"; else echo "cross"; ?>-inverted text-primary"></span></td>
+<?php if ( $key == 0 ) { ?>
+							<td>
+								<img src="<?php echo $home."theme/Flat-UI-Pro-1.2.5/images/icons/medal.svg"; ?>" alt="medal" style = "height: 30px !important; line-height: 30px !important; vertical-align: middle;">
+							</td>
+<?php } else { ?>
+							<td><span class="fui-<?php if ($runvalue['days'] >= 8) echo "check"; else echo "cross"; ?>-inverted text-primary"></span></td>
+<?php } ?>
 						</tr>
-<?php
-			}
-		?>
+<?php } ?>
+						<tr>
+							<td>
+							</td>
+							<th>Total</th>
+							<th><?php echo $runtotal['days']; ?> (runs)</th>
+							<th><?php echo number_format($runtotal['distance'],2); ?> (km)</th>
+							<td></td>
+						</tr>
 					</table>
 				</div>          
 			</div>
@@ -98,11 +110,25 @@
 							</td>
 							<td><?php echo number_format($runvalue['distance'],2); ?></td>
 							<td><?php echo $runvalue['days']; ?></td>
-							<td><span class="fui-<?php if ($runvalue['days'] >= 12) echo "check"; else echo "cross"; ?>-inverted text-primary"></span></td>
+<?php if ( $key == 0 ) { ?>
+							<td>
+								<img src="<?php echo $home."theme/Flat-UI-Pro-1.2.5/images/icons/medal.svg"; ?>" alt="medal" style = "height: 30px !important; line-height: 30px !important; vertical-align: middle;">
+							</td>
+<?php } else { ?>
+							<td><span class="fui-<?php if ($runvalue['days'] >= 8) echo "check"; else echo "cross"; ?>-inverted text-primary"></span></td>
+<?php } ?>
 						</tr>
 		<?php
 			}
 		?>
+						<tr>
+							<td>
+							</td>
+							<th>Total</th>
+							<th><?php echo number_format($runtotal['distance'],2); ?> (km)</th>
+							<th><?php echo $runtotal['days']; ?> (runs)</th>
+							<td></td>
+						</tr>
 					</table>
 				</div>          
 			</div>
